@@ -1,0 +1,33 @@
+<header class="header">
+    <div class="header-top"></div>
+    <div class="header-content">
+        <div class="logo-section">
+            <div class="logo">
+                <div class="logo-symbol">
+                    <span class="logo-q">Q</span>
+                    <div class="logo-letters">
+                        <span class="logo-p">P</span>
+                        <span class="logo-m">M</span>
+                        <span class="logo-c">C</span>
+                    </div>
+                </div>
+                <div class="logo-text">
+                    <h1 class="company-name">{{ companyName() }}</h1>
+                    <p class="company-tagline">{{ companyTagline() }}</p>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navigation">
+            <ul class="nav-list">
+                @for (item of navigationItems(); track item.label) {
+                <li class="nav-item">
+                    <a [routerLink]="item.route" routerLinkActive="active" class="nav-link">
+                        {{ item.label }}
+                    </a>
+                </li>
+                }
+            </ul>
+        </nav>
+    </div>
+</header>

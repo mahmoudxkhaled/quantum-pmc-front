@@ -1,0 +1,160 @@
+.header {
+  background-color: #1a1a2e;
+  color: white;
+  position: relative;
+  width: 100%;
+}
+
+.header-top {
+  height: 4px;
+  background: linear-gradient(90deg, #e0e0e0 0%, #b0b0b0 100%);
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 2px,
+    rgba(255, 255, 255, 0.1) 2px,
+    rgba(255, 255, 255, 0.1) 4px
+  );
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-symbol {
+  display: flex;
+  align-items: flex-start;
+  background: white;
+  padding: 0.75rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-q {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0066cc;
+  line-height: 1;
+  margin-right: 0.5rem;
+}
+
+.logo-letters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.logo-p,
+.logo-m,
+.logo-c {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #0066cc;
+  line-height: 1;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.company-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+  line-height: 1;
+}
+
+.company-tagline {
+  font-size: 0.75rem;
+  color: #333;
+  margin: 0;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+  position: relative;
+  
+  &:hover {
+    color: #4da6ff;
+  }
+  
+  &.active {
+    color: #4da6ff;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: #4da6ff;
+      border-radius: 1px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .nav-list {
+    gap: 1rem;
+  }
+  
+  .logo {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .logo-symbol {
+    margin-bottom: 0.5rem;
+  }
+}
