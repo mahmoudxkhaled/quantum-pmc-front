@@ -21,10 +21,27 @@
         <nav class="navigation">
             <ul class="nav-list">
                 @for (item of navigationItems(); track item.label) {
-                <li class="nav-item">
+                <li class="nav-item" [class.has-dropdown]="item.hasDropdown">
+                    @if (item.route) {
                     <a [routerLink]="item.route" routerLinkActive="active" class="nav-link">
                         {{ item.label }}
                     </a>
+                    } @else {
+                    <span class="nav-link dropdown-trigger">
+                        {{ item.label }}
+                    </span>
+                    }
+                    @if (item.hasDropdown && item.dropdownItems) {
+                    <ul class="dropdown-menu">
+                        @for (dropdownItem of item.dropdownItems; track dropdownItem.label) {
+                        <li class="dropdown-item">
+                            <a [routerLink]="dropdownItem.route" class="dropdown-link">
+                                {{ dropdownItem.label }}
+                            </a>
+                        </li>
+                        }
+                    </ul>
+                    }
                 </li>
                 }
             </ul>

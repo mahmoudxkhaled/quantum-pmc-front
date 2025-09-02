@@ -3,26 +3,34 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
     {
         path: '',
-        loadComponent: () => import('./home/home.component').then(m => m.HomeComponent)
+        loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent)
     },
     {
         path: 'about',
-        loadComponent: () => import('./about/about.component').then(m => m.AboutComponent)
+        loadComponent: () => import('./pages/about/about.component').then(m => m.AboutComponent)
     },
     {
         path: 'services',
-        loadComponent: () => import('./services/services.component').then(m => m.ServicesComponent)
+        loadComponent: () => import('./pages/services/services.component').then(m => m.ServicesComponent)
+    },
+    {
+        path: 'services/project-management',
+        loadComponent: () => import('./pages/services/service-one/service-one.component').then(m => m.ServiceOneComponent)
+    },
+    {
+        path: 'services/claims-management',
+        loadComponent: () => import('./pages/services/service-two/service-two.component').then(m => m.ServiceTwoComponent)
     },
     {
         path: 'projects',
-        loadComponent: () => import('./projects/projects.component').then(m => m.ProjectsComponent)
+        loadComponent: () => import('./pages/projects/projects.component').then(m => m.ProjectsComponent)
     },
     {
         path: 'careers',
-        loadComponent: () => import('./careers/careers.component').then(m => m.CareersComponent)
+        loadComponent: () => import('./pages/careers/careers.component').then(m => m.CareersComponent)
     },
     {
         path: 'contact',
-        loadComponent: () => import('./contact/contact.component').then(m => m.ContactComponent)
+        loadComponent: () => import('./pages/contact/contact.component').then(m => m.ContactComponent)
     }
 ];
