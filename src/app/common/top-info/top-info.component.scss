@@ -4,11 +4,28 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 0 0 1rem 1rem;
 
-  .contact-info {
+  .all-items {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    
+    // Contact group container
+    .contact-group {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem; // Small spacing between email and whatsapp
+      margin-right: auto; // Push to the left
+    }
+    
+    // Social group container
+    .social-group {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-left: auto; // Push to the right
+    }
 
     .email-button {
       display: flex;
@@ -20,7 +37,7 @@
       text-decoration: none;
       color: #333;
       transition: all 0.3s ease;
-      margin-right: 1rem;
+      // margin-right: 1rem; // Removed since we're using gap
 
       &:hover {
         background-color: #f8f9fa;
@@ -82,6 +99,52 @@
         font-weight: 500;
   }
 }
+
+    // Social media icons styling
+    .social-group {
+      .nav-link {
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        i {
+          font-size: 1.2rem;
+          width: 2.5rem;
+          height: 2.5rem;
+          line-height: 2.5rem;
+          text-align: center;
+          background-color: #ffffff;
+          border-radius: 50%;
+          transition: all 0.3s ease;
+
+          &:hover {
+            transform: translateY(-2px);
+            background-color: #f8f9fa;
+          }
+
+          // Specific icon colors
+          &.fa-facebook {
+            color: #3b5998;
+          }
+
+          &.fa-instagram {
+            color: #e1306c;
+          }
+
+          &.fa-twitter {
+            color: #1da1f2;
+          }
+
+          &.fa-linkedin-in {
+            color: #0077b5;
+          }
+        }
+      }
+    }
+
   }
 
   .social-links {
@@ -136,47 +199,57 @@
 
   // Responsive adjustments
   @media (max-width: 1200px) {
-    .social-links {
+    .social-group {
       display: none !important;
     }
   }
 
   @media (max-width: 768px) {
-    .contact-info {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.5rem;
+    .all-items {
+      justify-content: center; // Center the contact group on mobile
+      
+      .contact-group {
+        margin-right: 0; // Remove auto margin on mobile
+        justify-content: center; // Center the buttons within the group
+      }
+    }
 
-      .email-button, .whatsapp-button {
-        padding: 0.4rem 1rem;
+    .email-button, .whatsapp-button {
+      padding: 0.4rem 1rem;
+      font-size: 0.8rem;
+
+      i {
+        font-size: 1rem;
+      }
+
+      .email-text, .whatsapp-text {
         font-size: 0.8rem;
-        margin-right: 0;
+      }
 
-        i {
-          font-size: 1rem;
-        }
-
-        .email-text, .whatsapp-text {
-          font-size: 0.8rem;
-        }
-
-        .email-address, .whatsapp-number {
-          font-size: 0.8rem;
-        }
+      .email-address, .whatsapp-number {
+        font-size: 0.8rem;
       }
     }
   }
 
 @media (max-width: 576px) {
-    .contact-info {
-  .email-button, .whatsapp-button {
+    .all-items {
+      justify-content: center; // Ensure centering on small screens
+      
+      .contact-group {
+        margin-right: 0;
+        justify-content: center;
+        gap: 0.3rem;
+      }
+      
+      .email-button, .whatsapp-button {
         padding: 0.3rem 0.8rem;
 
         .email-text, .whatsapp-text {
           display: none;
-  }
+        }
 
-  .email-address, .whatsapp-number {
+        .email-address, .whatsapp-number {
           font-size: 0.75rem;
         }
       }

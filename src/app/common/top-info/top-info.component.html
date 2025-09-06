@@ -1,8 +1,11 @@
-<div class="navbar-top navbar-dark bg-primary py-2 mx-2 rounded-bottom-4">
+<div class="navbar-top navbar-dark bg-primary py-3 mx-4 rounded-bottom-4">
   <div class="container">
     <div class="d-flex flex-wrap justify-content-between align-items-center">
-      <ul class="nav align-items-center justify-content-center contact-info">
-        <li class="nav-item mx-3">
+
+      <!-- All items in one line -->
+      <div class="all-items">
+        <!-- Contact group on the left -->
+        <div class="contact-group">
           <a class="email-button" href="mailto:{{ companyEmail }}" title="{{ translations.email }}">
             <span class="email-logo">
               <i class="far fa-envelope"></i>
@@ -12,8 +15,6 @@
               <span class="email-address">{{ companyEmail }}</span>
             </span>
           </a>
-        </li>
-        <li class="nav-item">
           <a class="whatsapp-button" href="https://wa.me/{{ companyWhatsapp }}" target="_blank"
             title="{{ translations.whatsapp }}">
             <span class="whatsapp-logo">
@@ -24,34 +25,25 @@
               <span class="whatsapp-number">{{ companyWhatsappString }}</span>
             </span>
           </a>
-        </li>
-      </ul>
+        </div>
 
-      <div class="nav d-none d-xl-flex     social-links">
-        <span class="social-label me-3">{{ translations.follow_us }}:</span>
-        <ul class="list-unstyled d-flex mb-0 align-items-center">
-          <li class="me-2">
-            <a class="nav-link" href="{{ socialLinks.facebook }}" target="_blank" title="Facebook">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
-          <li class="me-2">
-            <a class="nav-link" href="{{ socialLinks.instagram }}" target="_blank" title="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li class="me-2">
-            <a class="nav-link" href="{{ socialLinks.twitter }}" target="_blank" title="Twitter">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a class="nav-link" href="{{ socialLinks.linkedin }}" target="_blank" title="LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </li>
-        </ul>
+        <!-- Social media icons on the right -->
+        <div class="social-group d-none d-xl-flex">
+          <a class="nav-link" href="{{ socialLinks.facebook }}" target="_blank" title="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a class="nav-link" href="{{ socialLinks.instagram }}" target="_blank" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a class="nav-link" href="{{ socialLinks.twitter }}" target="_blank" title="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a class="nav-link" href="{{ socialLinks.linkedin }}" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
       </div>
+
     </div>
   </div>
 </div>
