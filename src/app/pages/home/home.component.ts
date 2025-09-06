@@ -13,6 +13,62 @@ export class HomeComponent {
   currentSlide = 0;
   private totalSlides = 3;
 
+  // Projects slider properties
+  currentProject = 0;
+  projectTranslateX = 0;
+  projects = [
+    {
+      title: "Samra 400kV Grid Station",
+      location: "Jordan",
+      image: "assets/Images/overall-layout.jpg"
+    },
+    {
+      title: "King Faisal Specialist Hospital and Research Center",
+      location: "Riyadh, Saudi Arabia",
+      image: "assets/Images/image-1.jpg"
+    },
+    {
+      title: "Development of Muscat International Airport Project",
+      location: "Oman",
+      image: "assets/Images/Layout-Copy-1.jpg"
+    },
+    {
+      title: "Qatar Aluminum Factory [Qatalum]",
+      location: "Qatar",
+      image: "assets/Images/external-photo.jpg"
+    },
+    {
+      title: "Expansion of Haram (the Holy Mosque in Makkah)",
+      location: "Makkah, Saudi Arabia",
+      image: "assets/Images/Haram-HL-Photo-In-Progress-1024x519.jpg"
+    },
+    {
+      title: "The Expansion of Qatar Electrical Network [Phase 7]",
+      location: "Qatar",
+      image: "assets/Images/P7-TX2.jpg"
+    },
+    {
+      title: "Bahrain Bay Development Project – Infrastructure Works",
+      location: "Bahrain",
+      image: "assets/Images/Master-Plan-1024x406.png"
+    },
+    {
+      title: "Hamad Port Project, Doha, Qatar",
+      location: "Doha, Qatar",
+      image: "assets/Images/small-layout.jpg"
+    },
+    {
+      title: "The Expansion of Qatar Electrical Network [Phase 6]",
+      location: "Qatar",
+      image: "assets/Images/P6-GIS-1024x768.jpg"
+    },
+    {
+      title: "Shams Abu Dhabi Marina & Sea Wall Project",
+      location: "Abu Dhabi, UAE",
+      image: "assets/Images/Shams-Project-890x664.png"
+    }
+  ];
+
   showSlide(index: number) {
     this.currentSlide = index;
     const slides = document.querySelectorAll('.slide');
@@ -52,11 +108,40 @@ export class HomeComponent {
     this.showSlide(this.currentSlide);
   }
 
+  // Projects slider methods
+  nextProject() {
+    this.currentProject = (this.currentProject + 1) % this.projects.length;
+    this.updateProjectPosition();
+  }
+
+  previousProject() {
+    this.currentProject = (this.currentProject - 1 + this.projects.length) % this.projects.length;
+    this.updateProjectPosition();
+  }
+
+  goToProject(index: number) {
+    this.currentProject = index;
+    this.updateProjectPosition();
+  }
+
+  private updateProjectPosition() {
+    // Calculate the translateX value based on current project (percentage)
+    this.projectTranslateX = -this.currentProject * 100;
+  }
+
   ngOnInit() {
+    // Initialize project position
+    this.updateProjectPosition();
+
     // Auto-rotate slides every 5 seconds
     setInterval(() => {
       this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
       this.showSlide(this.currentSlide);
     }, 5000);
+
+    // Auto-rotate projects every 8 seconds
+    setInterval(() => {
+      this.nextProject();
+    }, 8000);
   }
 }

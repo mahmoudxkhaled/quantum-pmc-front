@@ -82,45 +82,110 @@
         </div>
     </section>
 
-    <!-- Projects Showcase Section -->
-    <section class="projects-showcase">
+    <!-- Clients Logo Marquee Section -->
+    <section class="clients-section">
         <div class="container">
-            <div class="showcase-header">
-                <h2 class="section-title">Our Clients</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image samra"></div>
-                        <h4>Samra 400kV Grid Station, Jordan</h4>
-                        <a routerLink="/projects" class="project-link">Read more</a>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image hospital"></div>
-                        <h4>King Faisal Specialist Hospital and Research Center</h4>
-                        <a routerLink="/projects" class="project-link">Read more</a>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image airport"></div>
-                        <h4>Development of Muscat International Airport Project</h4>
-                        <a routerLink="/projects" class="project-link">Read more</a>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image qatalum"></div>
-                        <h4>Qatar Aluminum Factory [Qatalum]</h4>
-                        <a routerLink="/projects" class="project-link">Read more</a>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image haram"></div>
-                        <h4>Expansion of Haram (the Holy Mosque in Makkah)</h4>
-                        <a routerLink="/projects" class="project-link">Read more</a>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image qatar-electrical"></div>
-                        <h4>The Expansion of Qatar Electrical Network [Phase 7]</h4>
-                        <a routerLink="/projects" class="project-link">Read more</a>
+            <h2 class="section-title">Our Clients</h2>
+            <div class="marquee-container">
+                <div class="marquee">
+                    <div class="marquee-content">
+                        <div class="client-logo">
+
+                            <img src="assets/Images/Picture1.jpg" alt="TAV Construction" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/Picture2.jpg" alt="Saudi Binladin Group" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/Picture3.jpg" alt="Hill International" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/Picture4.jpg" alt="Athena SA" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/Picture6.jpg" alt="VATECH" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/Picture7.jpg" alt="Siemens" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/Picture8.jpg" alt="Client Logo" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/Picture9.jpg" alt="Client Logo" class="logo-img">
+                        </div>
+                        <!-- Duplicate for seamless loop -->
+                        <div class="client-logo">
+                            <img src="assets/Images/Picture1.jpg" alt="TAV Construction" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/Picture2.jpg" alt="Saudi Binladin Group" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/Picture3.jpg" alt="Hill International" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/Picture4.jpg" alt="Athena SA" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/Picture6.jpg" alt="VATECH" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/Picture7.jpg" alt="Siemens" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/Picture8.jpg" alt="Client Logo" class="logo-img">
+                        </div>
+                        <div class="client-logo">
+                            <img src="assets/Images/Picture9.jpg" alt="Client Logo" class="logo-img">
+                        </div>
                     </div>
                 </div>
-                <div class="all-projects-button">
-                    <a routerLink="/projects" class="cta-button">All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Slider Section -->
+    <section class="projects-slider-section">
+        <div class="container">
+            <h2 class="section-title">Our Projects</h2>
+            <div class="projects-slider-container">
+                <button class="project-slider-arrow project-slider-left" (click)="previousProject()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="project-slider-arrow project-slider-right" (click)="nextProject()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="projects-slider">
+                    <div class="projects-track" [style.transform]="'translateX(' + projectTranslateX + '%)'">
+                        <div class="project-card" *ngFor="let project of projects; let i = index"
+                            [class.active]="i === currentProject">
+                            <div class="project-image" [style.background-image]="'url(' + project.image + ')'">
+                                <div class="project-overlay">
+                                    <h3 class="project-title">{{ project.title }}</h3>
+                                    <p class="project-location">{{ project.location }}</p>
+                                    <a routerLink="/projects" class="project-link">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-dots">
+                    <button *ngFor="let project of projects; let i = index" class="project-dot"
+                        [class.active]="i === currentProject" (click)="goToProject(i)">
+                    </button>
                 </div>
             </div>
         </div>
