@@ -1,0 +1,134 @@
+.banner-section {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.banner-content {
+  text-align: center;
+  color: white;
+}
+
+.banner-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.banner-description {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.breadcrumb-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.breadcrumb-item.active {
+  color: white;
+  font-weight: 600;
+}
+
+.breadcrumb-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+  color: #4da6ff;
+  text-decoration: none;
+}
+
+.breadcrumb-separator {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0.75rem;
+  font-weight: 300;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner-section {
+    padding: 3rem 0;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .banner-description {
+    font-size: 1rem;
+  }
+
+  .breadcrumb {
+    padding: 0.5rem 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .breadcrumb-item {
+    font-size: 0.8rem;
+  }
+
+  .breadcrumb-separator {
+    margin: 0 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-title {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+}

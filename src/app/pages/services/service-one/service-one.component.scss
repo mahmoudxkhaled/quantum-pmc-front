@@ -1,0 +1,174 @@
+.service-one-content {
+  min-height: 100vh;
+  background: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Main Content Section */
+.main-content {
+  padding: 4rem 0;
+  background: white;
+}
+
+/* Introduction Section */
+.intro-section {
+  margin-bottom: 4rem;
+  text-align: left;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+/* Services Diagram */
+.services-diagram {
+  margin: 4rem 0;
+  padding: 2rem 0;
+  background: #f8f9fa;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.diagram-image {
+  text-align: center;
+  max-width: 100%;
+}
+
+.services-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Detailed Services */
+.detailed-services {
+  margin-top: 4rem;
+}
+
+.service-detail {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border-left: 4px solid #3498db;
+}
+
+.service-detail h3 {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.service-detail ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-detail li {
+  padding: 0.8rem 0;
+  color: #333;
+  line-height: 1.7;
+  position: relative;
+  padding-left: 2rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.service-detail li:last-child {
+  border-bottom: none;
+}
+
+.service-detail li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #3498db;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .services-diagram {
+    margin: 2rem 0;
+    padding: 1.5rem 0;
+  }
+
+  .service-detail {
+    padding: 1.5rem;
+  }
+
+  .service-detail h3 {
+    font-size: 1.2rem;
+  }
+
+  .service-detail li {
+    padding: 0.6rem 0;
+    padding-left: 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 2rem 0;
+  }
+
+  .intro-section {
+    margin-bottom: 2rem;
+  }
+
+  .services-diagram {
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+  }
+
+  .detailed-services {
+    margin-top: 2rem;
+  }
+
+  .service-detail {
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+  .service-detail h3 {
+    font-size: 1.1rem;
+  }
+
+  .service-detail li {
+    padding: 0.5rem 0;
+    padding-left: 1.2rem;
+    font-size: 0.85rem;
+  }
+}

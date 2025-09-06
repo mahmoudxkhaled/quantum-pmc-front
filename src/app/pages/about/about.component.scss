@@ -1,0 +1,191 @@
+.about-content {
+  min-height: 100vh;
+  background: white;
+}
+
+/* Main About Section */
+.about-main {
+  padding: 4rem 0;
+  background: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* About Sections */
+.about-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  padding: 2rem 0;
+}
+
+.vision-section {
+  flex-direction: row;
+}
+
+.mission-section {
+  flex-direction: row-reverse;
+}
+
+.values-section {
+  flex-direction: row;
+}
+
+/* Section Icons */
+.section-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.icon-circle {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #e91e63;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  background: white;
+}
+
+.icon-circle svg {
+  width: 60px;
+  height: 60px;
+}
+
+.icon-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Section Content */
+.section-content {
+  flex: 1;
+  padding: 1rem 0;
+}
+
+.section-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #34495e;
+  margin: 0;
+}
+
+/* Vision Icon */
+.vision-icon {
+  width: 60px;
+  height: 60px;
+}
+
+/* Mission Icon */
+.mission-icon {
+  width: 60px;
+  height: 60px;
+}
+
+/* Values Icon */
+.values-icon {
+  width: 60px;
+  height: 60px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-section {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .mission-section {
+    flex-direction: column;
+  }
+
+  .section-icon {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .icon-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .icon-circle svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .section-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .section-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .about-section {
+    margin-bottom: 2rem;
+  }
+
+  .icon-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .icon-circle svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .section-content h2 {
+    font-size: 1.3rem;
+  }
+}

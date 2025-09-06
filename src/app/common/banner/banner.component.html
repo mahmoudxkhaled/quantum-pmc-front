@@ -1,0 +1,21 @@
+<section class="banner-section">
+  <div class="banner-overlay"></div>
+  <div class="container">
+    <div class="banner-content">
+      <h1 class="banner-title">{{ title }}</h1>
+      <p *ngIf="description" class="banner-description">{{ description }}</p>
+
+      <nav *ngIf="breadcrumbLabel1 && breadcrumbLabel2" class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a [routerLink]="breadcrumbLink1" class="breadcrumb-link">{{ breadcrumbLabel1 }}</a>
+          </li>
+          <li *ngIf="breadcrumbLabel2" class="breadcrumb-separator">/</li>
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ breadcrumbLabel2 }}
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</section>
