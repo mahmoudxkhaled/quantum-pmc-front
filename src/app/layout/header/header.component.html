@@ -4,12 +4,7 @@
         <div class="logo-section">
             <div class="logo">
                 <div class="logo-symbol">
-                    <span class="logo-q">Q</span>
-                    <div class="logo-letters">
-                        <span class="logo-p">P</span>
-                        <span class="logo-m">M</span>
-                        <span class="logo-c">C</span>
-                    </div>
+                    <img src="assets/Images/cropped-logo-180x180.png" alt="Quantum PMC Logo" class="logo-image">
                 </div>
                 <div class="logo-text">
                     <h1 class="company-name">{{ companyName() }}</h1>
@@ -18,24 +13,35 @@
             </div>
         </div>
 
-        <nav class="navigation">
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" (click)="toggleMobileMenu()" [class.active]="isMobileMenuOpen()">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+
+        <nav class="navigation" [class.mobile-open]="isMobileMenuOpen()">
             <ul class="nav-list">
                 @for (item of navigationItems(); track item.label) {
                 <li class="nav-item" [class.has-dropdown]="item.hasDropdown">
                     @if (item.route) {
-                    <a [routerLink]="item.route" routerLinkActive="active" class="nav-link">
+                    <a [routerLink]="item.route" [routerLinkActiveOptions]="{ exact: item.route === '/' }"
+                        routerLinkActive="active" class="nav-link" (click)="closeMobileMenu()">
                         {{ item.label }}
                     </a>
                     } @else {
-                    <span class="nav-link dropdown-trigger">
+                    <span class="nav-link dropdown-trigger" [class.active]="isServiceActive(item)"
+                        (click)="toggleDropdown(item.label)">
                         {{ item.label }}
+                        <i class="fas fa-chevron-down dropdown-arrow" [class.rotated]="isDropdownOpen(item.label)"></i>
                     </span>
                     }
                     @if (item.hasDropdown && item.dropdownItems) {
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" [class.open]="isDropdownOpen(item.label)">
                         @for (dropdownItem of item.dropdownItems; track dropdownItem.label) {
                         <li class="dropdown-item">
-                            <a [routerLink]="dropdownItem.route" class="dropdown-link">
+                            <a [routerLink]="dropdownItem.route" [routerLinkActiveOptions]="{ exact: true }"
+                                routerLinkActive="active" class="dropdown-link" (click)="closeMobileMenu()">
                                 {{ dropdownItem.label }}
                             </a>
                         </li>

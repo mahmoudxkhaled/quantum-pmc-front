@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterLink, RouterLinkActive, Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 interface NavigationItem {
@@ -33,7 +33,52 @@ export class HeaderComponent {
         { label: 'Contact Us', route: '/contact' }
     ]);
 
+    // Mobile menu state
+    protected readonly isMobileMenuOpen = signal(false);
+    protected readonly openDropdowns = signal<Set<string>>(new Set());
+
+    constructor(private router: Router) { }
 
     protected readonly companyName = signal('Quantum');
     protected readonly companyTagline = signal('PROJECT MANAGEMENT & CLAIMS SERVICES');
+
+    isServiceActive(item: NavigationItem): boolean {
+        if (!item.hasDropdown || !item.dropdownItems) {
+            return false;
+        }
+
+        const currentUrl = this.router.url;
+        return item.dropdownItems.some(dropdownItem =>
+            dropdownItem.route && currentUrl.startsWith(dropdownItem.route)
+        );
+    }
+
+    toggleMobileMenu(): void {
+        this.isMobileMenuOpen.update(open => !open);
+        // Close all dropdowns when toggling mobile menu
+        if (!this.isMobileMenuOpen()) {
+            this.openDropdowns.set(new Set());
+        }
+    }
+
+    closeMobileMenu(): void {
+        this.isMobileMenuOpen.set(false);
+        this.openDropdowns.set(new Set());
+    }
+
+    toggleDropdown(label: string): void {
+        this.openDropdowns.update(dropdowns => {
+            const newDropdowns = new Set(dropdowns);
+            if (newDropdowns.has(label)) {
+                newDropdowns.delete(label);
+            } else {
+                newDropdowns.add(label);
+            }
+            return newDropdowns;
+        });
+    }
+
+    isDropdownOpen(label: string): boolean {
+        return this.openDropdowns().has(label);
+    }
 }
