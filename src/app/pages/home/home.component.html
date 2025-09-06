@@ -1,0 +1,128 @@
+<div class="home-content">
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <!-- <h1 class="company-title">Quantum Project Management & Claims Services (QPMC)</h1> -->
+            <div class="hero-slider">
+                <button class="slider-arrow slider-arrow-left" (click)="previousSlide()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="slider-arrow slider-arrow-right" (click)="nextSlide()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="slide slide-1 active">
+                    <p>Quantum Project Management & Claims Services (QPMC)</p>
+                    <h2>Project Controls Services</h2>
+                    <p>Comprehensive project planning, execution, and delivery solutions</p>
+                    <a routerLink="/services/project-management" class="cta-button">View more ...</a>
+                </div>
+                <div class="slide slide-2">
+                    <p>Quantum Project Management & Claims Services (QPMC)</p>
+                    <h2>Claims & Disputes Resolution Services</h2>
+                    <p>Expert claims handling, resolution, and dispute management</p>
+                    <a routerLink="/services/claims-management" class="cta-button">View more ...</a>
+                </div>
+                <div class="slide slide-3">
+                    <p>Quantum Project Management & Claims Services (QPMC)</p>
+                    <h2>Contracts & Project Management Services</h2>
+                    <p>Strategic project management and contract administration</p>
+                    <a routerLink="/services/project-management" class="cta-button">View more ...</a>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-dot active" (click)="showSlide(0)"></button>
+                <button class="slider-dot" (click)="showSlide(1)"></button>
+                <button class="slider-dot" (click)="showSlide(2)"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Overview Section -->
+    <section class="company-overview">
+        <div class="container">
+            <h2 class="section-title">Quantum Project Management & Claims Services (QPMC)</h2>
+
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <h3>Why QPMC</h3>
+                    <ul>
+                        <li>All our services can vary from providing day-to-day support and/or professional advises, up
+                            to full responsibility from the 1st brick of the function to its full operation/interface
+                        </li>
+                        <li>The flexibility of the services we can offer will ensure cost effective solutions to our
+                            Clients</li>
+                    </ul>
+                    <p>With more than 20 years of experience in the construction industry within the middle east, our
+                        team have developed a diverse experience and knowledge of the region's needs and challenges with
+                        respect to complex construction projects management and disputes handling up to resolution</p>
+                </div>
+
+                <div class="overview-card">
+                    <h3>Who can be our Client</h3>
+                    <ul>
+                        <li>Governmental entities, developers, or any construction project owner seeking to utilize our
+                            services in general claims management and/or expert reports</li>
+                        <li>Project owners, Consultants, or Contractors seeking to develop and implement a robust change
+                            management strategy</li>
+                        <li>Contractors aiming to organize their project disputes and develop their entitlements claims
+                        </li>
+                        <li>Contractors seeking advise on Contract's risk distribution and containment during tendering
+                        </li>
+                        <li>Project owners, Consultants, and/or Contractors requiring services for mediation or
+                            adjudication for their disputes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Showcase Section -->
+    <section class="projects-showcase">
+        <div class="container">
+            <div class="showcase-header">
+                <h2 class="section-title">Our Clients</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image samra"></div>
+                        <h4>Samra 400kV Grid Station, Jordan</h4>
+                        <a routerLink="/projects" class="project-link">Read more</a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image hospital"></div>
+                        <h4>King Faisal Specialist Hospital and Research Center</h4>
+                        <a routerLink="/projects" class="project-link">Read more</a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image airport"></div>
+                        <h4>Development of Muscat International Airport Project</h4>
+                        <a routerLink="/projects" class="project-link">Read more</a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image qatalum"></div>
+                        <h4>Qatar Aluminum Factory [Qatalum]</h4>
+                        <a routerLink="/projects" class="project-link">Read more</a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image haram"></div>
+                        <h4>Expansion of Haram (the Holy Mosque in Makkah)</h4>
+                        <a routerLink="/projects" class="project-link">Read more</a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image qatar-electrical"></div>
+                        <h4>The Expansion of Qatar Electrical Network [Phase 7]</h4>
+                        <a routerLink="/projects" class="project-link">Read more</a>
+                    </div>
+                </div>
+                <div class="all-projects-button">
+                    <a routerLink="/projects" class="cta-button">All Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

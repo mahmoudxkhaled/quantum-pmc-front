@@ -1,49 +1,62 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
-    selector: 'app-home',
-    standalone: true,
-    imports: [CommonModule],
-    template: `
-    <div class="home-content">
-      <h1>Welcome to Quantum PMC</h1>
-      <p>Your trusted partner in project management and claims services</p>
-      <div class="features">
-        <div class="feature">
-          <h3>Project Management</h3>
-          <p>Expert project planning, execution, and monitoring</p>
-        </div>
-        <div class="feature">
-          <h3>Claims Services</h3>
-          <p>Professional claims handling and dispute resolution</p>
-        </div>
-        <div class="feature">
-          <h3>Consulting</h3>
-          <p>Strategic advice for complex projects</p>
-        </div>
-      </div>
-    </div>
-  `,
-    styles: [`
-    .home-content {
-      text-align: center;
-      padding: 2rem;
-    }
-    
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-top: 3rem;
-    }
-    
-    .feature {
-      padding: 1.5rem;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-  `]
+  selector: 'app-home',
+  standalone: true,
+  imports: [CommonModule, RouterModule],
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
-export class HomeComponent { }
+export class HomeComponent {
+  currentSlide = 0;
+  private totalSlides = 3;
+
+  showSlide(index: number) {
+    this.currentSlide = index;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.slider-dot');
+
+    slides.forEach((slide, i) => {
+      if (i === index) {
+        slide.classList.add('active');
+        // Reset and restart animations for the active slide
+        const textElements = slide.querySelectorAll('h2, p, .cta-button');
+        textElements.forEach((element: any) => {
+          element.style.animation = 'none';
+          element.offsetHeight; // Trigger reflow
+          element.style.animation = null;
+        });
+      } else {
+        slide.classList.remove('active');
+      }
+    });
+
+    dots.forEach((dot, i) => {
+      if (i === index) {
+        dot.classList.add('active');
+      } else {
+        dot.classList.remove('active');
+      }
+    });
+  }
+
+  nextSlide() {
+    this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
+    this.showSlide(this.currentSlide);
+  }
+
+  previousSlide() {
+    this.currentSlide = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
+    this.showSlide(this.currentSlide);
+  }
+
+  ngOnInit() {
+    // Auto-rotate slides every 5 seconds
+    setInterval(() => {
+      this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
+      this.showSlide(this.currentSlide);
+    }, 5000);
+  }
+}
