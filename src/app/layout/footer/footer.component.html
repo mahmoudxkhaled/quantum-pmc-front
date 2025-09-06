@@ -1,0 +1,114 @@
+<footer class="footer">
+    <div class="footer-content">
+        <div class="container">
+            <div class="footer-grid">
+
+                <!-- Company Info Section -->
+                <div class="footer-section company-info">
+                    <div class="footer-logo">
+                        <img src="assets/Images/cropped-logo-180x180.png" alt="Quantum PMC Logo" class="logo-image">
+                        <div class="logo-text">
+                            <h3 class="company-name">{{ companyName }}</h3>
+                            <p class="company-tagline">{{ companyTagline }}</p>
+                        </div>
+                    </div>
+                    <p class="company-description">
+                        {{ companyDescription }}
+                    </p>
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="{{ socialLinks.facebook }}" target="_blank" class="social-link" title="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="{{ socialLinks.instagram }}" target="_blank" class="social-link" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="{{ socialLinks.twitter }}" target="_blank" class="social-link" title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="{{ socialLinks.linkedin }}" target="_blank" class="social-link" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="footer-section quick-links">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-menu">
+                        <li><a routerLink="/" routerLinkActive="active"
+                                [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+                        <li><a routerLink="/about" routerLinkActive="active">About Us</a></li>
+                        <!-- <li><a routerLink="/services" routerLinkActive="active">Services</a></li> -->
+                        <li><a routerLink="/projects" routerLinkActive="active">Projects</a></li>
+                        <li><a routerLink="/careers" routerLinkActive="active">Careers</a></li>
+                        <li><a routerLink="/contact" routerLinkActive="active">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Section -->
+                <div class="footer-section services">
+                    <h4>Our Services</h4>
+                    <ul class="footer-menu">
+                        <li><a routerLink="/services/project-management" routerLinkActive="active">Project
+                                Management</a></li>
+                        <li><a routerLink="/services/claims-management" routerLinkActive="active">Claims Management</a>
+                        </li>
+                        <!-- <li><a href="#cost-control">Cost Control</a></li> -->
+                        <!-- <li><a href="#planning">Planning & Scheduling</a></li> -->
+                        <!-- <li><a href="#quantity-surveying">Quantity Surveying</a></li> -->
+                        <!-- <li><a href="#dispute-resolution">Dispute Resolution</a></li> -->
+                    </ul>
+                </div>
+
+                <!-- Contact Info Section -->
+                <div class="footer-section contact-info">
+                    <h4>Contact Information</h4>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-text">
+                                <span class="contact-label">Address</span>
+                                <span class="contact-value">{{ companyAddress }}</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:{{ companyEmail }}" class="contact-value">{{ companyEmail }}</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div class="contact-text">
+                                <span class="contact-label">WhatsApp</span>
+                                <a href="https://wa.me/{{ companyWhatsapp }}" target="_blank" class="contact-value">{{
+                                    companyWhatsappString }}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-content">
+                <p class="copyright">
+                    &copy; {{ currentYear }} {{ companyName }}. All rights reserved.
+                </p>
+                <div class="footer-bottom-links">
+                    <a href="#privacy-policy">Privacy Policy</a>
+                    <a href="#terms-of-service">Terms of Service</a>
+                    <a href="#sitemap">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

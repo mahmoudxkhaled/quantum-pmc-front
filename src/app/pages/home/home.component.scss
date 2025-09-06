@@ -6,7 +6,7 @@
 .hero-section {
   // background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
   color: white;
-  padding: 4rem 0;
+  padding: 1rem 0;
   text-align: center;
   position: relative;
 }
@@ -172,21 +172,43 @@
   opacity: 0;
   transform: translateY(30px);
   animation: slideInUp 0.8s ease-out 0.9s forwards;
-  background: #2f39d3;
+  background: linear-gradient(135deg, #2f39d3 0%, #4da6ff 100%);
   color: white;
-  padding: 1rem 2rem;
+  padding: 1.2rem 2.5rem;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 50px;
   font-weight: 600;
+  font-size: 1.1rem;
   transition: all 0.3s ease;
   display: inline-block;
-  box-shadow: 0 4px 15px rgba(47, 57, 211, 0.4);
+  box-shadow: 0 6px 20px rgba(47, 57, 211, 0.4);
+  border: 2px solid transparent;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide .cta-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.slide .cta-button:hover::before {
+  left: 100%;
 }
 
 .slide .cta-button:hover {
-  background: #0c0f26;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(47, 57, 211, 0.6);
+  background: linear-gradient(135deg, #1e2a8a 0%, #2d5aa0 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(47, 57, 211, 0.6);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 @keyframes slideInUp {
@@ -201,19 +223,43 @@
 }
 
 .cta-button {
-  background: #2f39d3;
+  background: linear-gradient(135deg, #2f39d3 0%, #4da6ff 100%);
   color: white;
-  padding: 1rem 2rem;
+  padding: 1.2rem 2.5rem;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 50px;
   font-weight: 600;
+  font-size: 1.1rem;
   transition: all 0.3s ease;
   display: inline-block;
+  box-shadow: 0 6px 20px rgba(47, 57, 211, 0.4);
+  border: 2px solid transparent;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.cta-button:hover::before {
+  left: 100%;
 }
 
 .cta-button:hover {
-  background: #0c0f26;
-  transform: translateY(-2px);
+  background: linear-gradient(135deg, #1e2a8a 0%, #2d5aa0 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(47, 57, 211, 0.6);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .slider-controls {
@@ -226,7 +272,7 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.3);
   border: none;
   cursor: pointer;
   transition: background 0.3s ease;
@@ -440,23 +486,24 @@
 }
 
 .projects-slider {
-  overflow: hidden;
-  border-radius: 12px;
   position: relative;
-  width: 100%;
-}
-
-.projects-track {
-  display: flex;
-  transition: transform 0.5s ease;
-  width: 100%;
-}
-
-.project-card {
-  flex: 0 0 100%;
   height: 400px;
-  position: relative;
-  min-width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.project-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.project-slide.active {
+  opacity: 1;
 }
 
 .project-image {
@@ -556,14 +603,14 @@
   right: -25px;
 }
 
-.project-dots {
+.project-slider-controls {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-top: 2rem;
 }
 
-.project-dot {
+.project-slider-dot {
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -573,8 +620,38 @@
   transition: background 0.3s ease;
 }
 
-.project-dot.active {
+.project-slider-dot.active {
   background: #2f39d3;
+}
+
+/* Explore Projects Button */
+.explore-projects-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.explore-projects-btn {
+  background: linear-gradient(135deg, #2f39d3 0%, #4da6ff 100%);
+  color: white;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(47, 57, 211, 0.3);
+  border: 2px solid transparent;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.explore-projects-btn:hover {
+  background: linear-gradient(135deg, #1e2a8a 0%, #2d5aa0 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(47, 57, 211, 0.4);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Responsive Design */
@@ -645,5 +722,19 @@
 
   .project-slider-right {
     right: -20px;
+  }
+
+  .project-slider-controls {
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+  }
+
+  .explore-projects-btn-container {
+    margin-top: 2rem;
+  }
+
+  .explore-projects-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
   }
 }

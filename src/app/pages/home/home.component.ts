@@ -111,27 +111,43 @@ export class HomeComponent {
   // Projects slider methods
   nextProject() {
     this.currentProject = (this.currentProject + 1) % this.projects.length;
-    this.updateProjectPosition();
+    this.updateProjectSlides();
   }
 
   previousProject() {
     this.currentProject = (this.currentProject - 1 + this.projects.length) % this.projects.length;
-    this.updateProjectPosition();
+    this.updateProjectSlides();
   }
 
   goToProject(index: number) {
     this.currentProject = index;
-    this.updateProjectPosition();
+    this.updateProjectSlides();
   }
 
-  private updateProjectPosition() {
-    // Calculate the translateX value based on current project (percentage)
-    this.projectTranslateX = -this.currentProject * 100;
+  private updateProjectSlides() {
+    const slides = document.querySelectorAll('.project-slide');
+    const dots = document.querySelectorAll('.project-slider-dot');
+
+    slides.forEach((slide, i) => {
+      if (i === this.currentProject) {
+        slide.classList.add('active');
+      } else {
+        slide.classList.remove('active');
+      }
+    });
+
+    dots.forEach((dot, i) => {
+      if (i === this.currentProject) {
+        dot.classList.add('active');
+      } else {
+        dot.classList.remove('active');
+      }
+    });
   }
 
   ngOnInit() {
-    // Initialize project position
-    this.updateProjectPosition();
+    // Initialize project slides
+    this.updateProjectSlides();
 
     // Auto-rotate slides every 5 seconds
     setInterval(() => {

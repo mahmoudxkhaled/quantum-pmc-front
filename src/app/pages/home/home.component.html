@@ -20,19 +20,19 @@
                     <p>Quantum Project Management & Claims Services (QPMC)</p>
                     <h2>Project Controls Services</h2>
                     <p>Comprehensive project planning, execution, and delivery solutions</p>
-                    <a routerLink="/services/project-management" class="cta-button">View more ...</a>
+                    <a routerLink="/services/project-management" class="cta-button">Explore more</a>
                 </div>
                 <div class="slide slide-2">
                     <p>Quantum Project Management & Claims Services (QPMC)</p>
                     <h2>Claims & Disputes Resolution Services</h2>
                     <p>Expert claims handling, resolution, and dispute management</p>
-                    <a routerLink="/services/claims-management" class="cta-button">View more ...</a>
+                    <a routerLink="/services/claims-management" class="cta-button">Explore more</a>
                 </div>
                 <div class="slide slide-3">
                     <p>Quantum Project Management & Claims Services (QPMC)</p>
                     <h2>Contracts & Project Management Services</h2>
                     <p>Strategic project management and contract administration</p>
-                    <a routerLink="/services/project-management" class="cta-button">View more ...</a>
+                    <a routerLink="/services/project-management" class="cta-button">Explore more</a>
                 </div>
             </div>
             <div class="slider-controls">
@@ -163,30 +163,31 @@
                     </svg>
                 </button>
                 <div class="projects-slider">
-                    <div class="projects-track" [style.transform]="'translateX(' + projectTranslateX + '%)'">
-                        <div class="project-card" *ngFor="let project of projects; let i = index"
-                            [class.active]="i === currentProject">
-                            <div class="project-image" [style.background-image]="'url(' + project.image + ')'">
-                                <div class="project-overlay">
-                                    <h3 class="project-title">{{ project.title }}</h3>
-                                    <p class="project-location">{{ project.location }}</p>
-                                    <a routerLink="/projects" class="project-link">
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </a>
-                                </div>
+                    <div class="project-slide" *ngFor="let project of projects; let i = index"
+                        [class.active]="i === currentProject">
+                        <div class="project-image" [style.background-image]="'url(' + project.image + ')'">
+                            <div class="project-overlay">
+                                <h3 class="project-title">{{ project.title }}</h3>
+                                <p class="project-location">{{ project.location }}</p>
+                                <a routerLink="/projects" class="project-link">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="project-dots">
-                    <button *ngFor="let project of projects; let i = index" class="project-dot"
+                <div class="project-slider-controls">
+                    <button *ngFor="let project of projects; let i = index" class="project-slider-dot"
                         [class.active]="i === currentProject" (click)="goToProject(i)">
                     </button>
                 </div>
+            </div>
+            <div class="explore-projects-btn-container">
+                <a routerLink="/projects" class="explore-projects-btn">Explore all projects</a>
             </div>
         </div>
     </section>
