@@ -1,0 +1,72 @@
+<div class="careers">
+    <div class="container">
+        <h1 class="title">Careers</h1>
+        <div class="hero-image">
+            <img src="assets/Images/careers.png" alt="Careers" />
+        </div>
+
+        <h2 class="apply-title">Apply</h2>
+
+        <div class="available-posts">
+            <label for="postSelect" class="sr-only">Currently available posts:</label>
+            <select id="postSelect" name="position" [(ngModel)]="formData.position" required>
+                <option value="">--Please choose an option--</option>
+                <option value="senior-forensic-planner">Senior Forensic Planner</option>
+                <option value="project-controls-manager">Project Controls Manager</option>
+                <option value="senior-planning-engineer">Senior Planning Engineer</option>
+            </select>
+            <small class="error" *ngIf="careerForm.submitted && !careerForm.controls['position']?.valid">Please choose a
+                position</small>
+        </div>
+
+        <form class="apply-form" #careerForm="ngForm" (ngSubmit)="careerForm.valid && onSubmit()" novalidate>
+            <div class="grid">
+                <div class="field">
+                    <input type="text" name="name" [(ngModel)]="formData.name" placeholder="Name" required
+                        minlength="2" />
+                    <small class="error" *ngIf="careerForm.submitted && !careerForm.controls['name']?.valid">Name is
+                        required (min 2 characters)</small>
+                </div>
+                <div class="field">
+                    <input type="email" name="email" [(ngModel)]="formData.email" placeholder="Email Address" required
+                        email />
+                    <small class="error" *ngIf="careerForm.submitted && !careerForm.controls['email']?.valid">Valid
+                        email is required</small>
+                </div>
+                <div class="field">
+                    <input type="tel" name="phone" [(ngModel)]="formData.phone" placeholder="Phone" required
+                        pattern="^[0-9+\-()\s]{7,}$" />
+                    <small class="error"
+                        *ngIf="careerForm.submitted && careerForm.controls['phone']?.errors?.['required']">Phone is
+                        required</small>
+                    <small class="error"
+                        *ngIf="careerForm.submitted && careerForm.controls['phone']?.errors?.['pattern']">Enter a valid
+                        phone number</small>
+                </div>
+                <div class="field">
+                    <input type="text" name="subject" [(ngModel)]="formData.subject" placeholder="Subject" required />
+                    <small class="error" *ngIf="careerForm.submitted && !careerForm.controls['subject']?.valid">Subject
+                        is required</small>
+                </div>
+                <div class="field full">
+                    <textarea rows="5" name="message" [(ngModel)]="formData.message" placeholder="your message" required
+                        minlength="10"></textarea>
+                    <small class="error" *ngIf="careerForm.submitted && !careerForm.controls['message']?.valid">Message
+                        must be at least 10 characters</small>
+                </div>
+                <div class="field full">
+                    <input type="url" name="linkedin" [(ngModel)]="formData.linkedin" placeholder="LinkedIn Profile"
+                        required pattern="^(https?:\/\/)?(www\.)?(linkedin\.com|lnkd\.in)\/.+$" />
+                    <small class="error"
+                        *ngIf="careerForm.submitted && careerForm.controls['linkedin']?.errors?.['required']">LinkedIn
+                        profile is required</small>
+                    <small class="error"
+                        *ngIf="careerForm.submitted && careerForm.controls['linkedin']?.errors?.['pattern']">Enter a
+                        valid LinkedIn URL</small>
+                </div>
+            </div>
+            <button type="submit" class="btn-apply" [disabled]="isSubmitting">{{ isSubmitting ? 'Submitting...' :
+                'Apply' }}</button>
+        </form>
+    </div>
+</div>
