@@ -149,15 +149,15 @@ export class HomeComponent {
     // Initialize project slides
     this.updateProjectSlides();
 
-    // Auto-rotate slides every 5 seconds
+    // Auto-rotate slides every 9 seconds (slower)
     setInterval(() => {
       this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
       this.showSlide(this.currentSlide);
-    }, 5000);
+    }, 6000);
 
-    // Auto-rotate projects every 8 seconds
+    // Auto-rotate projects every 12 seconds (slower)
     setInterval(() => {
       this.nextProject();
-    }, 8000);
+    }, 6000);
   }
 }

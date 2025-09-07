@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { BannerComponent } from '../../common/banner/banner.component';
 
 @Component({
     selector: 'app-careers',
     standalone: true,
-    imports: [CommonModule, RouterModule, FormsModule],
+    imports: [CommonModule, RouterModule, FormsModule, BannerComponent],
     templateUrl: './careers.component.html',
     styleUrls: ['./careers.component.scss']
 })

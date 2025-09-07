@@ -1,0 +1,65 @@
+<app-banner title="Contact Us" description="Get in touch with us"
+    backgroundImage="assets/images/pattern/04.png"></app-banner>
+
+<div class="contact">
+    <div class="container">
+
+        <div class="contact-layout">
+            <div class="contact-details">
+                <h3>Contact Details</h3>
+                <p>Quantum PMC LLC</p>
+                <p>
+                    Address: Al-Ansab, PO Box: B3897-900 – Muscat,
+                    <br />
+                    Sultanate of Oman
+                </p>
+                <p>Email: info@quantum-pmc.com</p>
+            </div>
+
+            <form class="apply-form" #contactForm="ngForm" (ngSubmit)="contactForm.valid && onSubmit()" novalidate>
+                <div class="grid">
+                    <div class="field">
+                        <input type="text" name="name" [(ngModel)]="formData.name" placeholder="Name" required
+                            minlength="2" />
+                        <small class="error" *ngIf="contactForm.submitted && !contactForm.controls['name']?.valid">Name
+                            is required (min 2 characters)</small>
+                    </div>
+                    <div class="field">
+                        <input type="email" name="email" [(ngModel)]="formData.email" placeholder="Email Address"
+                            required email />
+                        <small class="error"
+                            *ngIf="contactForm.submitted && !contactForm.controls['email']?.valid">Valid email is
+                            required</small>
+                    </div>
+                    <div class="field">
+                        <input type="tel" name="phone" [(ngModel)]="formData.phone" placeholder="Phone" required
+                            pattern="^[0-9+\-()\s]{7,}$" />
+                        <small class="error"
+                            *ngIf="contactForm.submitted && contactForm.controls['phone']?.errors?.['required']">Phone
+                            is required</small>
+                        <small class="error"
+                            *ngIf="contactForm.submitted && contactForm.controls['phone']?.errors?.['pattern']">Enter a
+                            valid phone number</small>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="subject" [(ngModel)]="formData.subject" placeholder="Subject"
+                            required />
+                        <small class="error"
+                            *ngIf="contactForm.submitted && !contactForm.controls['subject']?.valid">Subject is
+                            required</small>
+                    </div>
+                    <div class="field full">
+                        <textarea rows="5" name="message" [(ngModel)]="formData.message"
+                            placeholder="How can we help you? Feel free to get in touch!" required
+                            minlength="10"></textarea>
+                        <small class="error"
+                            *ngIf="contactForm.submitted && !contactForm.controls['message']?.valid">Message must be at
+                            least 10 characters</small>
+                    </div>
+                </div>
+                <button type="submit" class="btn-apply" [disabled]="isSubmitting">{{ isSubmitting ? 'Submitting...' :
+                    'Get In Touch' }}</button>
+            </form>
+        </div>
+    </div>
+</div>
