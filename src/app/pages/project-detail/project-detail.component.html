@@ -39,8 +39,10 @@
     <section class="project-description">
         <div class="container">
             <div class="description-content">
+                <h3>Description:</h3>
+
                 <div class="description-text">
-                    <p><strong>Description:</strong> {{ project.description }}</p>
+                    <p [innerHTML]="project.description"></p>
                 </div>
                 <div class="key-responsibilities">
                     <h3>Key Responsibilities:</h3>
@@ -68,12 +70,20 @@
         <div class="container">
             <div class="related-header">
                 <h2 class="related-title">You May Also Like</h2>
-                <div class="title-line"></div>
+                <!-- <div class="title-line"></div> -->
             </div>
-            <div class="related-links">
-                <a [routerLink]="['/projects', relatedProject.id]" class="related-link"
+            <div class="related-grid">
+                <a [routerLink]="['/projects', relatedProject.id]" class="related-card"
                     *ngFor="let relatedProject of project.relatedProjects">
-                    {{ relatedProject.title }} / Projects
+                    <div class="related-image-wrapper">
+                        <img [src]="getProjectImage(relatedProject.id)" [alt]="relatedProject.title">
+                        <div class="related-overlay">
+                            <span class="overlay-text">Explore</span>
+                        </div>
+                    </div>
+                    <div class="related-info">
+                        <h4 class="related-name">{{ relatedProject.title }}</h4>
+                    </div>
                 </a>
             </div>
         </div>

@@ -42,10 +42,9 @@ export class ProjectDetailComponent implements OnInit {
       "company": "Saudi Binladin Group (SBG)",
       "scope": "Main Contractor (EPC)",
       "heroImage": "assets/Images/king-faisal-1.jpg",
-      "description": "Construction of a new medical center north of Jeddah, including medical, research, and academic buildings, admin, utility buildings, and infrastructure. Contract value: 3.7 billion SAR (~1 billion USD).",
+      "description": "The Contract involved the construction of a new medical center north of Jeddah, including few medical buildings, research and academic buildings, admin building, few utility buildings, and associated infrastructure. The contract’s value was about 3.7 billion SARs (nearly 1 billion USDs).",
       "responsibilities": [
-        "Establishment of claims structure",
-        "Management of claims preparation (prolongation costs, disruption, escalation of rates, etc.)"
+        "The establishment of the Project’s claims structure, and the management of claims preparation, including prolongation costs claim, disruption claim, escalation of rates claim, and other work-related claims"
       ],
       "images": [
         "assets/Images/king-faisal-1.jpg",
@@ -86,11 +85,9 @@ export class ProjectDetailComponent implements OnInit {
       "company": "Athena Emirates LLC",
       "scope": "Contractor",
       "heroImage": "assets/Images/Shams.jpg",
-      "description": "Construction of 2.0 km Sea Wall, 0.7 km Marina Wall, and dredging of lagoon within Al Reem Island.",
+      "description": "The project was comprised of the construction of a 2.0 km Sea Wall, a 0.7 km Marina Wall and the dredging of a lagoon within Al Reem Island in Abu Dhabi.",
       "responsibilities": [
-        "Planning",
-        "Management of resources utilization",
-        "EoT Claims"
+        "Planning, management of resources utilization, and EoT Claims"
       ],
       "images": [
       ],
@@ -108,11 +105,9 @@ export class ProjectDetailComponent implements OnInit {
       "company": "Hill International",
       "scope": "PMC Services",
       "heroImage": "assets/Images/Bahrain-hero.jpg",
-      "description": "Bahrain Bay development with 432,000 m² island, mixed-use boulevard, residential towers, venues, hotel, and park. Infrastructure phase included 4 bridges, networks, pump stations, utilities. Value: 220 million QAR (~60 million USD).",
+      "description": "Bahrain Bay is a development project with a total size of 432,000 m2 consisting of an island connected to the mainland via causeways, with mixed-use boulevard, a variety of buildings and amenities, including residential towers, cultural venues, an upscale hotel, and a verdant park. <br> <br> The project’s infrastructure phase involved the construction of 4 bridges, MV substations, fire & potable water tanks and networks, district cooling network, irrigation pump stations, as well as the construction of all road works. The infrastructure PMC contract value was about 220 million QARs (about 60 million USDs).",
       "responsibilities": [
-        "Planning",
-        "Cost Control",
-        "EoT Claims"
+        "Planning, Cost Control, and EoT Claims"
       ],
       "images": [
         "assets/Images/Bahrain-1.jpg",
@@ -132,10 +127,9 @@ export class ProjectDetailComponent implements OnInit {
       "company": "Consolidated Contractors Company (CCC)",
       "scope": "Contractor",
       "heroImage": "assets/Images/QAF-1.jpg",
-      "description": "Largest Aluminum Factory constructed worldwide in one phase, with a total value of 3.6 billion QAR.",
+      "description": "The construction of Qatar Aluminum Factory (Qatalum), the largest Aluminum Factory constructed worldwide in one phase, with a total value of 3.5 billion QARs.",
       "responsibilities": [
-        "Planning and progress monitoring",
-        "Scheduling for precast production facilities"
+        "Planning and progress monitoring, in addition to the resources & operations detailed scheduling for the precast production facilities"
       ],
       "images": [
         "assets/Images/QAF-1.jpg",
@@ -155,11 +149,9 @@ export class ProjectDetailComponent implements OnInit {
       "company": "Ministry Project Team",
       "scope": "Client Support",
       "heroImage": "assets/Images/Hamad-1.jpg",
-      "description": "Construction of new sea port at south of Doha, naval base, Qatar Economic Zone. Total value: 27 billion QAR (~7.4 billion USD).",
+      "description": "The project involved the construction of a new sea port at the south of Doha, with a new base for Qatari naval forces, and the construction of Qatar Economic Zone, with a span of more than 26 square kilometers. The Project’s total value was 27 billion QARs (7.4 billion USDs).",
       "responsibilities": [
-        "Planning and schedule management",
-        "Delay and concurrency analysis",
-        "Claims evaluation"
+        "Planning and master schedule management, delay and concurrency analysis, and claims evaluation"
       ],
       "images": [
         "assets/Images/Hamad-1.jpg",
@@ -179,11 +171,9 @@ export class ProjectDetailComponent implements OnInit {
       "company": "Siemens PTD",
       "scope": "Main Contractor (EPC)",
       "heroImage": "assets/Images/EQON6-hero.jpg",
-      "description": "Expansion with 16 new substations, extension of 5, and 23 HV/HV cable routes. Value: 1.8 billion QAR (~490 million USD).",
+      "description": "Expanding the capacity of Qatar’s electricity network through the construction of 15 new Substations, the extension of 5 existing Substations and constructing 23 new HV/MV cable routes. The Project’s total value was 1.8 billion QARs (490 million USDs). The project’s infrastructure phase involved the construction of 4 bridges, MV substations, fire & potable water tanks and networks, district cooling network, irrigation pump stations, as well as the construction of all road works. The infrastructure PMC contract value was about 220 million QARs (about 60 million USDs).",
       "responsibilities": [
-        "Planning team establishment",
-        "Baseline preparation",
-        "Progress monitoring, KPIs, resource control"
+        "Planning team establishment, procedures, baseline preparation, progress monitoring, KPIs and resources control"
       ],
       "images": [
         "assets/Images/EQON6-1.jpg",
@@ -211,11 +201,9 @@ export class ProjectDetailComponent implements OnInit {
       "company": "Siemens PTD",
       "scope": "Main Contractor (EPC)",
       "heroImage": "assets/Images/EQON7-hero.jpg",
-      "description": "One of KAHRAMAA's largest contracts: 28 new substations, extension of 21. Value: 3.2 billion QAR (~880 million USD).",
+      "description": "One of the largest contracts ever awarded by KAHRAMAA (Qatar’s general electricity & water corporation). The Project was comprised of 28 new Substations and the extension of 21 existing Substations, with a total value of 3.2 billion QARs (about 880 M USDs).",
       "responsibilities": [
-        "Planning team establishment",
-        "Baseline preparation",
-        "Progress monitoring, KPIs, resource control"
+        "Planning team establishment, procedures, baseline preparation, progress monitoring, KPIs and resources control"
       ],
       "images": [
         "assets/Images/EQON7-1.jpg",
@@ -239,15 +227,15 @@ export class ProjectDetailComponent implements OnInit {
       "company": "CCC/TAV Joint Venture",
       "scope": "Main Contractor (MC1)",
       "heroImage": "assets/Images/DOM-1.jpg",
-      "description": "Largest airport project in Oman, with new airfield, refurbishment, 45 new buildings, utilities, networks, bridges, and roads. Value: 450 million OMR (~1.2 billion USD).",
+      "description": "The Development of Muscat International Airport project was the largest airport project in Oman, providing an important gateway into the capital city of Muscat. MC1 works comprised of the construction of a new airfield area (runway, taxiways and aprons), refurbishment of an existing airfield, 43 new buildings (substations & utility buildings), several large utility networks (high voltage, medium voltage and low voltage power networks, sewerage system, chilled water system, potable water network, fire fighting network and fuel hydrant network), storm water drainage system, as well as a roads & bridges network (7 new bridges and about 30 roads from minor to highways). The contract’s total value was 450 million OMR (about 1.2 billion USD).",
       "responsibilities": [
-        "Project planning and scheduling",
-        "Progress monitoring & KPIs",
+        "Project Planning & master scheduling",
+        "Progress Monitoring & KPIs",
         "Cost Control",
-        "Time impact analysis",
+        "Variations and delay events recording, and time impact analysis",
         "Extension of time claims",
         "Disruption claims",
-        "Support in arbitration"
+        "Support in the arbitration process and the preparation of related documents including witnesses statements"
       ],
       "images": [
         "assets/Images/DOM-2.jpg",
@@ -266,13 +254,13 @@ export class ProjectDetailComponent implements OnInit {
       "company": "Saudi Binladin Group (SBG)",
       "scope": "Main Contractor (EPC)",
       "heroImage": "assets/Images/HE-Hero.jpg",
-      "description": "Expansion of Haram, 10+ years, multiple contracts, congested area. Overall value: ~200 billion SAR (~50 billion USD).",
+      "description": `The expansion of Haram was comprised of a large projects portfolio and extended for more than 10 years, with a massive complexity of working environment within a live congested area and in the most holy Islamic place. The projects portfolio was organized under several cost-plus contracts, and the overall value at completion was estimated to be nearly 200 billion SARs (more than 50 billion USDs). The key projects in Haram Expansion’s portfolio were:`,
       "responsibilities": [
-        "Establishment of Cost Control department",
-        "Preparation of budgets and cash flow analysis",
-        "Preparation of schedules and funding plans",
-        "Support in funding procedures with Ministry of Finance",
-        "Project controls follow-up"
+        "Establishment of Haramain Division’s Cost Control department, including recruitment, development of cost breakdown structure, procedures, analysis … etc.",
+        "Preparation of Haram projects’ detailed budgets and cash flow analysis",
+        "Preparation of Cost Loaded Schedules, and funding plans",
+        "Support in the establishment of a funding procedures and disbursement mechanism with the Ministry of Finance, and the full control for disbursement implementation",
+        "Follow-up for other Project Controls functions"
       ],
       "images": [
         "assets/Images/HE-1.jpg",
@@ -311,5 +299,10 @@ export class ProjectDetailComponent implements OnInit {
       this.error = `Project "${projectId}" not found.`;
       this.project = null;
     }
+  }
+
+  getProjectImage(projectId: string): string {
+    const project = this.projectsData[projectId as keyof typeof this.projectsData];
+    return project ? project.heroImage : '';
   }
 }

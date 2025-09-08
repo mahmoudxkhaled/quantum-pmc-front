@@ -2,275 +2,41 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
-            <h1 class="page-title">Our Projects</h1>
-            <p class="hero-subtitle">Successfully delivered projects across various sectors and scales</p>
+            <h1 class="page-title">Projects</h1>
+            <!-- <p class="hero-subtitle">Successfully delivered projects across various sectors and scales</p> -->
         </div>
     </section>
+    <p class="container text-center" style="font-size: 1.2rem; text-align: center; margin-top: 15px;">Our team have
+        supported or provided
+        project management
+        and claims services for
+        various
+        construction projects within the middle east with diverse size and nature, from small infrastructure projects,
+        residential buildings, utility lines, power stations, and up to mega airport and seaport projects. The following
+        points list few of those projects with a highlight on the project functions supported or fully managed by our
+        team.</p>
 
     <!-- Projects Grid -->
     <section class="projects-showcase">
         <div class="container">
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <div [routerLink]="['/projects', 'samra']" style="cursor: pointer;" class="project-image samra">
+                <div class="project-card" *ngFor="let p of projects">
+                    <div class="project-image-container" [routerLink]="['/projects', p.id]" style="cursor: pointer;">
+                        <div class="project-image" [ngStyle]=" { 'background-image' : 'url(' + p.image + ')' }">
                         </div>
                         <div class="image-overlay">
-                            <a [routerLink]="['/projects', 'samra']" class="project-link">Read more</a>
+                            <a [routerLink]="['/projects', p.id]" class="project-link">Read more</a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 [routerLink]="['/projects', 'samra']" style="cursor: pointer;">Samra 400kV Grid Station,
-                            Jordan</h3>
-                        <p class="project-client">Client - Jordan Electrical Authority</p>
-                        <p class="project-company">Company - VATech Reyrolle</p>
-                        <p class="project-scope">Scope - Main Contractor (EPC)</p>
-                        <p class="project-location">Jordan</p>
-                        <p class="project-description">High-voltage electrical infrastructure project for the national
-                            power grid, involving complex engineering and construction management.</p>
+                        <h3 [routerLink]="['/projects', p.id]" style="cursor: pointer;">{{ p.title }}</h3>
+                        <p class="project-client">Client - {{ p.client }}</p>
+                        <p class="project-company">Company - {{ p.company }}</p>
+                        <p class="project-scope">Scope - {{ p.scope }}</p>
+                        <p class="project-location">{{ p.location }}</p>
+                        <p class="project-description">{{ p.description }}</p>
                         <div class="project-tags">
-                            <span class="tag">Infrastructure</span>
-                            <span class="tag">Electrical</span>
-                            <span class="tag">Government</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <div [routerLink]="['/projects', 'king-faisal']" style="cursor: pointer;"
-                            class="project-image hospital">
-                        </div>
-                        <div class="image-overlay">
-                            <a [routerLink]="['/projects', 'king-faisal']" class="project-link">Read more</a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 [routerLink]="['/projects', 'king-faisal']" style="cursor: pointer;">King Faisal Specialist
-                            Hospital and Research Center</h3>
-                        <p class="project-client">Client - King Faisal Specialist Hospital</p>
-                        <p class="project-company">Company - Saudi Binladin Group (SBG)</p>
-                        <p class="project-scope">Scope - Main Contractor (EPC)</p>
-                        <p class="project-location">Riyadh, Saudi Arabia</p>
-                        <p class="project-description">State-of-the-art medical facility construction with advanced
-                            healthcare technology integration and specialized medical units.</p>
-                        <div class="project-tags">
-                            <span class="tag">Healthcare</span>
-                            <span class="tag">Hospital</span>
-                            <span class="tag">Research</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <div [routerLink]="['/projects', 'haram-expansion']" style="cursor: pointer;"
-                            class="project-image haram">
-                        </div>
-                        <div class="image-overlay">
-                            <a [routerLink]="['/projects', 'haram-expansion']" class="project-link">Read more</a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 [routerLink]="['/projects', 'haram-expansion']" style="cursor: pointer;">Expansion of Haram
-                            (the Holy
-                            Mosque in Makkah)</h3>
-                        <p class="project-client">Client - Ministry of Finance</p>
-                        <p class="project-company">Company - Saudi Binladin Group (SBG)</p>
-                        <p class="project-scope">Scope - Main Contractor (EPC)</p>
-                        <p class="project-location">Makkah, Saudi Arabia</p>
-                        <p class="project-description">Sacred religious site expansion project involving complex
-                            architectural design, cultural sensitivity, and massive scale construction.</p>
-                        <div class="project-tags">
-                            <span class="tag">Religious</span>
-                            <span class="tag">Cultural</span>
-                            <span class="tag">Architecture</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <div [routerLink]="['/projects', 'qatalum']" style="cursor: pointer;"
-                            class="project-image qatalum">
-                        </div>
-                        <div class="image-overlay">
-                            <a [routerLink]="['/projects', 'qatalum']" class="project-link">Read more</a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 [routerLink]="['/projects', 'qatalum']" style="cursor: pointer;">Qatar Aluminum Factory
-                            [Qatalum]</h3>
-                        <p class="project-client">Client - Qatar Aluminum (Qatalum)</p>
-                        <p class="project-company">Company - Consolidated Contractors Company (CCC)</p>
-                        <p class="project-scope">Scope - Contractor</p>
-                        <p class="project-location">Mesaieed, Qatar</p>
-                        <p class="project-description">Large-scale industrial facility construction for aluminum
-                            production with advanced manufacturing processes and environmental controls.</p>
-                        <div class="project-tags">
-                            <span class="tag">Industrial</span>
-                            <span class="tag">Manufacturing</span>
-                            <span class="tag">Aluminum</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <div [routerLink]="['/projects', 'muscat-airport']" style="cursor: pointer;"
-                            class="project-image airport">
-                        </div>
-                        <div class="image-overlay">
-                            <a [routerLink]="['/projects', 'muscat-airport']" class="project-link">Read more</a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 [routerLink]="['/projects', 'muscat-airport']" style="cursor: pointer;">Development of
-                            Muscat
-                            International Airport Project</h3>
-                        <p class="project-client">Client - Ministry of Transportation</p>
-                        <p class="project-company">Company - CCC/TAV Joint Venture</p>
-                        <p class="project-scope">Scope - Main Contractor (MC1)</p>
-                        <p class="project-location">Muscat, Oman</p>
-                        <p class="project-description">Major airport expansion and modernization project including
-                            terminal buildings, runways, and supporting infrastructure.</p>
-                        <div class="project-tags">
-                            <span class="tag">Aviation</span>
-                            <span class="tag">Infrastructure</span>
-                            <span class="tag">Transportation</span>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <div [routerLink]="['/projects', 'qatar-electrical-7']" style="cursor: pointer;"
-                            class="project-image qatar-electrical">
-                        </div>
-                        <div class="image-overlay">
-                            <a [routerLink]="['/projects', 'qatar-electrical-7']" class="project-link">Read more</a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 [routerLink]="['/projects', 'qatar-electrical-7']" style="cursor: pointer;">The Expansion of
-                            Qatar Electrical Network [Phase 7]</h3>
-                        <p class="project-client">Client - Qatar Electricity & Water Authority (Kahramaa)</p>
-                        <p class="project-company">Company - Siemens PTD</p>
-                        <p class="project-scope">Scope - Main Contractor (EPC)</p>
-                        <p class="project-location">Doha, Qatar</p>
-                        <p class="project-description">National electrical grid expansion project including substations,
-                            transmission lines, and smart grid technology implementation.</p>
-                        <div class="project-tags">
-                            <span class="tag">Power</span>
-                            <span class="tag">Smart Grid</span>
-                            <span class="tag">Infrastructure</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <div [routerLink]="['/projects', 'bahrain-bay']" style="cursor: pointer;"
-                            class="project-image master-plan">
-                        </div>
-                        <div class="image-overlay">
-                            <a [routerLink]="['/projects', 'bahrain-bay']" class="project-link">Read more</a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 [routerLink]="['/projects', 'bahrain-bay']" style="cursor: pointer;">Bahrain Bay Development
-                            Project – Infrastructure Works</h3>
-                        <p class="project-client">Client - Bahrain Bay</p>
-                        <p class="project-company">Company - Hill International</p>
-                        <p class="project-scope">Scope - PMC Services</p>
-                        <p class="project-location">Manama, Bahrain</p>
-                        <p class="project-description">Comprehensive urban development project including roads,
-                            utilities, landscaping, and supporting infrastructure for a new waterfront district.</p>
-                        <div class="project-tags">
-                            <span class="tag">Urban</span>
-                            <span class="tag">Infrastructure</span>
-                            <span class="tag">Waterfront</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <div [routerLink]="['/projects', 'hamad-port']" style="cursor: pointer;"
-                            class="project-image hamad-port">
-                        </div>
-                        <div class="image-overlay">
-                            <a [routerLink]="['/projects', 'hamad-port']" class="project-link">Read more</a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 [routerLink]="['/projects', 'hamad-port']" style="cursor: pointer;">Hamad Port Project,
-                            Doha, Qatar</h3>
-                        <p class="project-client">Client - Ministry of Transport</p>
-                        <p class="project-company">Company - Ministry Project Team</p>
-                        <p class="project-scope">Scope - Client Support</p>
-                        <p class="project-location">Doha, Qatar</p>
-                        <p class="project-description">Major seaport development including container terminals, cargo
-                            handling facilities, and maritime infrastructure for international trade.</p>
-                        <div class="project-tags">
-                            <span class="tag">Maritime</span>
-                            <span class="tag">Port</span>
-                            <span class="tag">Trade</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <div [routerLink]="['/projects', 'qatar-electrical-6']" style="cursor: pointer;"
-                            class="project-image qatar-electrical-6">
-                        </div>
-                        <div class="image-overlay">
-                            <a [routerLink]="['/projects', 'qatar-electrical-6']" class="project-link">Read more</a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 [routerLink]="['/projects', 'qatar-electrical-6']" style="cursor: pointer;">The Expansion of
-                            Qatar Electrical Network [Phase 6]</h3>
-                        <p class="project-client">Client - Qatar Electricity & Water Authority (Kahramaa)</p>
-                        <p class="project-company">Company - Siemens PTD</p>
-                        <p class="project-scope">Scope - Main Contractor (EPC)</p>
-                        <p class="project-location">Doha, Qatar</p>
-                        <p class="project-description">Advanced electrical network expansion with modern power
-                            distribution systems and renewable energy integration.</p>
-                        <div class="project-tags">
-                            <span class="tag">Power</span>
-                            <span class="tag">Renewable</span>
-                            <span class="tag">Distribution</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <div [routerLink]="['/projects', 'shams']" style="cursor: pointer;"
-                            class="project-image shams-marina">
-                        </div>
-                        <div class="image-overlay">
-                            <a [routerLink]="['/projects', 'shams']" class="project-link">Read more</a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 [routerLink]="['/projects', 'shams']" style="cursor: pointer;">Shams Abu Dhabi Marina
-                            & Sea Wall Project</h3>
-                        <p class="project-client">Client - Al-Reem Island</p>
-                        <p class="project-company">Company - Athena Emirates LLC</p>
-                        <p class="project-scope">Scope - Contractor</p>
-                        <p class="project-location">Abu Dhabi, UAE</p>
-                        <p class="project-description">Luxury marina development with sea wall protection, including
-                            berthing facilities, recreational areas, and coastal engineering works.</p>
-                        <div class="project-tags">
-                            <span class="tag">Marina</span>
-                            <span class="tag">Coastal</span>
-                            <span class="tag">Luxury</span>
+                            <span class="tag" *ngFor="let tag of p.tags">{{ tag }}</span>
                         </div>
                     </div>
                 </div>
