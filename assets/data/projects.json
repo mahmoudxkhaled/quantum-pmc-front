@@ -1,0 +1,1074 @@
+{
+  "projects": {
+    "samra": {
+      "id": "samra",
+      "title": "Samra 400kV Grid Station",
+      "subtitle": "High-voltage electrical infrastructure and power distribution systems",
+      "location": "Jordan",
+      "client": "Jordan Electric Power Company",
+      "duration": "24 Months",
+      "value": "$120M",
+      "heroImage": "samra-hero",
+      "overview": "The Samra 400kV Grid Station project represents a critical infrastructure development for Jordan's power grid, providing high-voltage electrical distribution and transmission capabilities to support the country's growing energy demands.",
+      "description": "Our project management team oversaw the construction of a major electrical substation including high-voltage equipment, control systems, and extensive electrical infrastructure.",
+      "stats": [
+        { "number": "400kV", "label": "Voltage Level" },
+        { "number": "15", "label": "Transformers" },
+        { "number": "24/7", "label": "Operation" }
+      ],
+      "scope": [
+        {
+          "icon": "⚡",
+          "title": "Electrical Infrastructure",
+          "items": [
+            "High-voltage transformers",
+            "Circuit breakers and switches",
+            "Control and protection systems",
+            "Electrical substation buildings"
+          ]
+        },
+        {
+          "icon": "🏗️",
+          "title": "Civil Construction",
+          "items": [
+            "Foundation and structural work",
+            "Equipment platforms and supports",
+            "Access roads and drainage",
+            "Security fencing and lighting"
+          ]
+        },
+        {
+          "icon": "🔧",
+          "title": "Systems Integration",
+          "items": [
+            "SCADA control systems",
+            "Communication networks",
+            "Safety and protection systems",
+            "Testing and commissioning"
+          ]
+        }
+      ],
+      "challenges": [
+        {
+          "challenge": "High-Voltage Safety",
+          "description": "Managing construction activities in high-voltage environments required strict safety protocols.",
+          "solution": "Implemented comprehensive safety training and specialized equipment for high-voltage work."
+        },
+        {
+          "challenge": "Technical Complexity",
+          "description": "Integrating complex electrical systems with civil infrastructure.",
+          "solution": "Developed detailed coordination plans and engaged specialized electrical engineering teams."
+        },
+        {
+          "challenge": "Schedule Pressure",
+          "description": "Meeting critical power grid expansion deadlines.",
+          "solution": "Implemented parallel construction activities and 24/7 construction schedules."
+        }
+      ],
+      "results": [
+        {
+          "icon": "✅",
+          "title": "On-Time Delivery",
+          "description": "Project completed within the 24-month schedule, meeting all electrical grid milestones."
+        },
+        {
+          "icon": "💰",
+          "title": "Budget Compliance",
+          "description": "Delivered within budget while exceeding all technical specifications."
+        },
+        {
+          "icon": "🔒",
+          "title": "Perfect Safety Record",
+          "description": "Achieved zero safety incidents across 100,000+ man-hours of construction."
+        },
+        {
+          "icon": "📊",
+          "title": "Performance Excellence",
+          "description": "Grid station operational with 99.9% reliability rating."
+        }
+      ],
+      "testimonial": {
+        "quote": "Quantum PMC's expertise in electrical infrastructure was crucial to the success of the Samra Grid Station. Their project management ensured seamless delivery of critical power infrastructure.",
+        "author": "Eng. Mohammad Al-Zoubi",
+        "position": "Director of Grid Operations, JEPCO"
+      },
+      "relatedProjects": [
+        {
+          "id": "qatar-electrical",
+          "title": "Qatar Electrical Network Phase 7",
+          "description": "Power infrastructure expansion project",
+          "imageClass": "electrical"
+        },
+        {
+          "id": "qatar-electrical-6",
+          "title": "Qatar Electrical Network Phase 6",
+          "description": "Advanced power distribution systems",
+          "imageClass": "electrical-6"
+        }
+      ]
+    },
+    "king-faisal": {
+      "id": "king-faisal",
+      "title": "King Faisal Specialist Hospital and Research Center",
+      "subtitle": "Advanced healthcare facility with cutting-edge medical technology",
+      "location": "Riyadh, Saudi Arabia",
+      "client": "King Faisal Foundation",
+      "duration": "36 Months",
+      "value": "$250M",
+      "heroImage": "king-faisal-hero",
+      "overview": "The King Faisal Specialist Hospital project represents a state-of-the-art healthcare facility designed to provide world-class medical services and research capabilities in the heart of Saudi Arabia.",
+      "description": "Our project management team coordinated the construction of a comprehensive medical complex including specialized treatment centers, research laboratories, and advanced medical equipment installation.",
+      "stats": [
+        { "number": "500+", "label": "Patient Beds" },
+        { "number": "25", "label": "Operating Rooms" },
+        { "number": "50+", "label": "Specialist Clinics" }
+      ],
+      "scope": [
+        {
+          "icon": "🏥",
+          "title": "Medical Facilities",
+          "items": [
+            "Specialized treatment centers",
+            "Operating rooms and ICUs",
+            "Diagnostic imaging facilities",
+            "Research laboratories"
+          ]
+        },
+        {
+          "icon": "🏗️",
+          "title": "Infrastructure",
+          "items": [
+            "Hospital buildings and structures",
+            "Medical equipment installation",
+            "Utility systems and HVAC",
+            "Security and access control"
+          ]
+        },
+        {
+          "icon": "🔬",
+          "title": "Technology Integration",
+          "items": [
+            "Medical imaging systems",
+            "Laboratory equipment",
+            "Patient monitoring systems",
+            "Hospital information systems"
+          ]
+        }
+      ],
+      "challenges": [
+        {
+          "challenge": "Medical Equipment Integration",
+          "description": "Coordinating installation of complex medical equipment with construction activities.",
+          "solution": "Developed integrated project schedules with medical equipment suppliers and installation teams."
+        },
+        {
+          "challenge": "Regulatory Compliance",
+          "description": "Meeting strict healthcare facility standards and regulations.",
+          "solution": "Engaged healthcare facility specialists and maintained continuous compliance monitoring."
+        },
+        {
+          "challenge": "Infection Control",
+          "description": "Maintaining sterile environments during construction in active medical areas.",
+          "solution": "Implemented strict infection control protocols and isolated construction zones."
+        }
+      ],
+      "results": [
+        {
+          "icon": "✅",
+          "title": "On-Time Delivery",
+          "description": "Project completed within the 36-month schedule, meeting all healthcare facility milestones."
+        },
+        {
+          "icon": "💰",
+          "title": "Budget Compliance",
+          "description": "Delivered within budget while exceeding all medical facility specifications."
+        },
+        {
+          "icon": "🔒",
+          "title": "Perfect Safety Record",
+          "description": "Achieved zero safety incidents across 150,000+ man-hours of construction."
+        },
+        {
+          "icon": "📊",
+          "title": "Healthcare Excellence",
+          "description": "Facility operational with full medical accreditation and patient care capabilities."
+        }
+      ],
+      "testimonial": {
+        "quote": "Quantum PMC's expertise in healthcare facility construction was instrumental in delivering the King Faisal Hospital. Their project management ensured world-class medical infrastructure.",
+        "author": "Dr. Abdullah Al-Rashid",
+        "position": "CEO, King Faisal Foundation"
+      },
+      "relatedProjects": [
+        {
+          "id": "muscat-airport",
+          "title": "Muscat International Airport",
+          "description": "Major airport infrastructure development",
+          "imageClass": "airport"
+        },
+        {
+          "id": "haram-expansion",
+          "title": "Haram Expansion Project",
+          "description": "Religious infrastructure development",
+          "imageClass": "haram"
+        }
+      ]
+    },
+    "muscat-airport": {
+      "id": "muscat-airport",
+      "title": "Development of Muscat International Airport Project",
+      "subtitle": "Major airport infrastructure development with comprehensive facilities",
+      "location": "Muscat, Oman",
+      "client": "Ministry of Transportation",
+      "duration": "42 Months",
+      "value": "$1.2B",
+      "heroImage": "muscat-airport-hero",
+      "overview": "The Development of Muscat International Airport project was the largest airport project in Oman, providing an important gateway into the capital city of Muscat.",
+      "description": "MC1 works comprised of the construction of a new airfield area (runway, taxiways and aprons), refurbishment of an existing airfield, 43 new buildings (substations & utility buildings), several large utility networks, storm water drainage system, as well as a roads & bridges network.",
+      "stats": [
+        { "number": "43", "label": "New Buildings" },
+        { "number": "7", "label": "New Bridges" },
+        { "number": "30+", "label": "Roads Network" }
+      ],
+      "scope": [
+        {
+          "icon": "✈️",
+          "title": "Airfield Development",
+          "items": [
+            "New runway and taxiways",
+            "Aircraft aprons and parking",
+            "Airfield lighting systems",
+            "Navigation aids installation"
+          ]
+        },
+        {
+          "icon": "🏗️",
+          "title": "Infrastructure",
+          "items": [
+            "Utility buildings and substations",
+            "Power and communication networks",
+            "Water and drainage systems",
+            "Roads and bridges network"
+          ]
+        },
+        {
+          "icon": "🔧",
+          "title": "Systems Integration",
+          "items": [
+            "Airport management systems",
+            "Security and surveillance",
+            "Fire protection systems",
+            "Environmental controls"
+          ]
+        }
+      ],
+      "challenges": [
+        {
+          "challenge": "Airfield Operations",
+          "description": "Maintaining airport operations while constructing new facilities.",
+          "solution": "Implemented phased construction with temporary operational facilities and night work schedules."
+        },
+        {
+          "challenge": "Utility Coordination",
+          "description": "Coordinating multiple utility networks and infrastructure systems.",
+          "solution": "Developed comprehensive utility coordination plans with detailed 3D modeling and clash detection."
+        },
+        {
+          "challenge": "Regulatory Compliance",
+          "description": "Meeting international aviation standards and local regulations.",
+          "solution": "Engaged aviation specialists and maintained continuous compliance monitoring."
+        }
+      ],
+      "results": [
+        {
+          "icon": "✅",
+          "title": "On-Time Delivery",
+          "description": "Project completed within the 42-month schedule, meeting all airport development milestones."
+        },
+        {
+          "icon": "💰",
+          "title": "Budget Compliance",
+          "description": "Delivered within budget while exceeding all aviation infrastructure specifications."
+        },
+        {
+          "icon": "🔒",
+          "title": "Perfect Safety Record",
+          "description": "Achieved zero safety incidents across 200,000+ man-hours of construction."
+        },
+        {
+          "icon": "📊",
+          "title": "Aviation Excellence",
+          "description": "Airport operational with full international aviation certification."
+        }
+      ],
+      "testimonial": {
+        "quote": "Quantum PMC's expertise in aviation infrastructure was crucial to the success of the Muscat Airport project. Their project management ensured seamless delivery of world-class airport facilities.",
+        "author": "Eng. Salim Al-Mahrouqi",
+        "position": "Director of Aviation Projects, MOT Oman"
+      },
+      "relatedProjects": [
+        {
+          "id": "qatar-electrical-6",
+          "title": "Qatar Electrical Network Phase 6",
+          "description": "Advanced power distribution systems",
+          "imageClass": "electrical-6"
+        },
+        {
+          "id": "samra",
+          "title": "Samra 400kV Grid Station",
+          "description": "High-voltage electrical infrastructure",
+          "imageClass": "samra"
+        }
+      ]
+    },
+    "qatalum": {
+      "id": "qatalum",
+      "title": "Qatar Aluminum Factory [Qatalum]",
+      "subtitle": "Industrial manufacturing facility with advanced production capabilities",
+      "location": "Qatar",
+      "client": "Qatalum",
+      "duration": "48 Months",
+      "value": "$400M",
+      "heroImage": "qatalum-hero",
+      "overview": "The Qatalum project represents a major industrial development, creating a world-class aluminum production facility with advanced manufacturing capabilities and environmental sustainability features.",
+      "description": "Our project management team oversaw the construction of a comprehensive industrial complex including production facilities, utility systems, and environmental protection infrastructure.",
+      "stats": [
+        { "number": "585K", "label": "Tons/Year Capacity" },
+        { "number": "50+", "label": "Production Lines" },
+        { "number": "Green", "label": "Technology" }
+      ],
+      "scope": [
+        {
+          "icon": "🏭",
+          "title": "Production Facilities",
+          "items": [
+            "Aluminum smelting plants",
+            "Production line equipment",
+            "Quality control laboratories",
+            "Warehouse and storage facilities"
+          ]
+        },
+        {
+          "icon": "🏗️",
+          "title": "Industrial Infrastructure",
+          "items": [
+            "Factory buildings and structures",
+            "Utility systems and power plants",
+            "Environmental control systems",
+            "Safety and security infrastructure"
+          ]
+        },
+        {
+          "icon": "🌱",
+          "title": "Environmental Systems",
+          "items": [
+            "Emission control systems",
+            "Waste treatment facilities",
+            "Energy efficiency systems",
+            "Environmental monitoring"
+          ]
+        }
+      ],
+      "challenges": [
+        {
+          "challenge": "Industrial Complexity",
+          "description": "Managing complex industrial construction with specialized equipment installation.",
+          "solution": "Engaged industrial construction specialists and implemented detailed equipment coordination plans."
+        },
+        {
+          "challenge": "Environmental Compliance",
+          "description": "Meeting strict environmental standards for industrial facilities.",
+          "solution": "Implemented comprehensive environmental protection systems and continuous monitoring."
+        },
+        {
+          "challenge": "Safety Requirements",
+          "description": "Maintaining high safety standards in hazardous industrial environments.",
+          "solution": "Established strict safety protocols and specialized safety training programs."
+        }
+      ],
+      "results": [
+        {
+          "icon": "✅",
+          "title": "On-Time Delivery",
+          "description": "Project completed within the 48-month schedule, meeting all industrial development milestones."
+        },
+        {
+          "icon": "💰",
+          "title": "Budget Compliance",
+          "description": "Delivered within budget while exceeding all industrial facility specifications."
+        },
+        {
+          "icon": "🔒",
+          "title": "Perfect Safety Record",
+          "description": "Achieved zero safety incidents across 250,000+ man-hours of construction."
+        },
+        {
+          "icon": "📊",
+          "title": "Industrial Excellence",
+          "description": "Facility operational with full production capacity and environmental certification."
+        }
+      ],
+      "testimonial": {
+        "quote": "Quantum PMC's expertise in industrial construction was instrumental in delivering the Qatalum facility. Their project management ensured world-class industrial infrastructure.",
+        "author": "Eng. Khalid Al-Sada",
+        "position": "CEO, Qatalum"
+      },
+      "relatedProjects": [
+        {
+          "id": "qatar-electrical",
+          "title": "Qatar Electrical Network Phase 7",
+          "description": "Power infrastructure expansion project",
+          "imageClass": "electrical"
+        },
+        {
+          "id": "qatar-electrical-6",
+          "title": "Qatar Electrical Network Phase 6",
+          "description": "Advanced power distribution systems",
+          "imageClass": "electrical-6"
+        }
+      ]
+    },
+    "haram-expansion": {
+      "id": "haram-expansion",
+      "title": "Expansion of Haram (Holy Mosque)",
+      "subtitle": "Religious infrastructure development with cultural significance",
+      "location": "Mecca, Saudi Arabia",
+      "client": "Saudi Binladin Group",
+      "duration": "60 Months",
+      "value": "$800M",
+      "heroImage": "haram-expansion-hero",
+      "overview": "The Haram Expansion project represents a significant development of the Holy Mosque in Mecca, enhancing its capacity and facilities while preserving its religious and cultural significance.",
+      "description": "Our project management team coordinated the expansion of sacred religious infrastructure including prayer areas, utility systems, and visitor facilities while maintaining continuous religious services.",
+      "stats": [
+        { "number": "2M+", "label": "Worshipper Capacity" },
+        { "number": "100+", "label": "New Facilities" },
+        { "number": "24/7", "label": "Religious Services" }
+      ],
+      "scope": [
+        {
+          "icon": "🕌",
+          "title": "Religious Facilities",
+          "items": [
+            "Prayer halls and areas",
+            "Ablution facilities",
+            "Religious service areas",
+            "Cultural preservation elements"
+          ]
+        },
+        {
+          "icon": "🏗️",
+          "title": "Infrastructure",
+          "items": [
+            "Building expansions and renovations",
+            "Utility systems and HVAC",
+            "Access and circulation areas",
+            "Security and safety systems"
+          ]
+        },
+        {
+          "icon": "🌍",
+          "title": "Cultural Integration",
+          "items": [
+            "Historical preservation",
+            "Cultural sensitivity",
+            "Religious compliance",
+            "Visitor experience enhancement"
+          ]
+        }
+      ],
+      "challenges": [
+        {
+          "challenge": "Religious Sensitivity",
+          "description": "Maintaining religious services and cultural sensitivity during construction.",
+          "solution": "Implemented phased construction with continuous religious service coordination and cultural consultation."
+        },
+        {
+          "challenge": "Historical Preservation",
+          "description": "Preserving historical and cultural elements while modernizing facilities.",
+          "solution": "Engaged cultural heritage specialists and implemented careful preservation techniques."
+        },
+        {
+          "challenge": "Visitor Management",
+          "description": "Managing millions of visitors during construction activities.",
+          "solution": "Developed comprehensive visitor management plans with temporary facilities and clear communication."
+        }
+      ],
+      "results": [
+        {
+          "icon": "✅",
+          "title": "On-Time Delivery",
+          "description": "Project completed within the 60-month schedule, meeting all religious facility milestones."
+        },
+        {
+          "icon": "💰",
+          "title": "Budget Compliance",
+          "description": "Delivered within budget while exceeding all religious facility specifications."
+        },
+        {
+          "icon": "🔒",
+          "title": "Perfect Safety Record",
+          "description": "Achieved zero safety incidents across 300,000+ man-hours of construction."
+        },
+        {
+          "icon": "📊",
+          "title": "Cultural Excellence",
+          "description": "Facility operational with enhanced capacity and preserved cultural heritage."
+        }
+      ],
+      "testimonial": {
+        "quote": "Quantum PMC's expertise in religious infrastructure was crucial to the success of the Haram Expansion. Their project management ensured cultural preservation and enhanced facilities.",
+        "author": "Sheikh Abdul Rahman Al-Sudais",
+        "position": "Imam of the Grand Mosque"
+      },
+      "relatedProjects": [
+        {
+          "id": "king-faisal",
+          "title": "King Faisal Specialist Hospital",
+          "description": "Advanced healthcare facility development",
+          "imageClass": "king-faisal"
+        },
+        {
+          "id": "muscat-airport",
+          "title": "Muscat International Airport",
+          "description": "Major airport infrastructure development",
+          "imageClass": "airport"
+        }
+      ]
+    },
+    "qatar-electrical": {
+      "id": "qatar-electrical",
+      "title": "Qatar Electrical Network Phase 7",
+      "subtitle": "Power infrastructure expansion and grid modernization",
+      "location": "Qatar",
+      "client": "Qatar General Electricity & Water Corporation",
+      "duration": "30 Months",
+      "value": "$150M",
+      "heroImage": "qatar-electrical-hero",
+      "overview": "The Qatar Electrical Network Phase 7 project represents a significant expansion of power infrastructure, modernizing the electrical grid to support Qatar's growing energy demands and hosting major international events.",
+      "description": "Our project management team oversaw the expansion of electrical infrastructure including new substations, transmission lines, and distribution networks to enhance power reliability and capacity.",
+      "stats": [
+        { "number": "600MW", "label": "Power Capacity" },
+        { "number": "20", "label": "Substations" },
+        { "number": "Smart", "label": "Grid Technology" }
+      ],
+      "scope": [
+        {
+          "icon": "⚡",
+          "title": "Electrical Infrastructure",
+          "items": [
+            "High-voltage substations",
+            "Transmission and distribution lines",
+            "Power transformers and equipment",
+            "Control and protection systems"
+          ]
+        },
+        {
+          "icon": "🏗️",
+          "title": "Civil Construction",
+          "items": [
+            "Substation buildings and structures",
+            "Equipment foundations and supports",
+            "Access roads and security fencing",
+            "Drainage and utility systems"
+          ]
+        },
+        {
+          "icon": "🔧",
+          "title": "Systems Integration",
+          "items": [
+            "SCADA control systems",
+            "Communication networks",
+            "Smart grid technologies",
+            "Testing and commissioning"
+          ]
+        }
+      ],
+      "challenges": [
+        {
+          "challenge": "Grid Integration",
+          "description": "Integrating new electrical infrastructure with existing power grid systems.",
+          "solution": "Developed comprehensive integration plans with detailed grid analysis and phased implementation."
+        },
+        {
+          "challenge": "Event Timeline",
+          "description": "Meeting critical deadlines for major international events.",
+          "solution": "Implemented accelerated construction schedules with parallel activities and 24/7 operations."
+        },
+        {
+          "challenge": "Technology Implementation",
+          "description": "Implementing advanced smart grid technologies and systems.",
+          "solution": "Engaged smart grid specialists and established comprehensive technology integration plans."
+        }
+      ],
+      "results": [
+        {
+          "icon": "✅",
+          "title": "On-Time Delivery",
+          "description": "Project completed within the 30-month schedule, meeting all power infrastructure milestones."
+        },
+        {
+          "icon": "💰",
+          "title": "Budget Compliance",
+          "description": "Delivered within budget while exceeding all electrical infrastructure specifications."
+        },
+        {
+          "icon": "🔒",
+          "title": "Perfect Safety Record",
+          "description": "Achieved zero safety incidents across 120,000+ man-hours of construction."
+        },
+        {
+          "icon": "📊",
+          "title": "Power Excellence",
+          "description": "Grid operational with enhanced capacity and smart grid capabilities."
+        }
+      ],
+      "testimonial": {
+        "quote": "Quantum PMC's expertise in electrical infrastructure was crucial to the success of Phase 7. Their project management ensured seamless grid expansion and modernization.",
+        "author": "Eng. Essa Al-Kuwari",
+        "position": "Director of Power Projects, KAHRAMAA"
+      },
+      "relatedProjects": [
+        {
+          "id": "samra",
+          "title": "Samra 400kV Grid Station",
+          "description": "High-voltage electrical infrastructure",
+          "imageClass": "samra"
+        },
+        {
+          "id": "qatar-electrical-6",
+          "title": "Qatar Electrical Network Phase 6",
+          "description": "Advanced power distribution systems",
+          "imageClass": "electrical-6"
+        }
+      ]
+    },
+    "bahrain-bay": {
+      "id": "bahrain-bay",
+      "title": "Bahrain Bay Development",
+      "subtitle": "Urban infrastructure and waterfront development project",
+      "location": "Manama, Bahrain",
+      "client": "Bahrain Bay Development Company",
+      "duration": "54 Months",
+      "value": "$350M",
+      "heroImage": "bahrain-bay-hero",
+      "overview": "The Bahrain Bay Development project represents a comprehensive urban infrastructure development, creating a modern waterfront destination with residential, commercial, and recreational facilities.",
+      "description": "Our project management team coordinated the development of urban infrastructure including roads, utilities, landscaping, and waterfront facilities to create a world-class urban environment.",
+      "stats": [
+        { "number": "100+", "label": "Hectares" },
+        { "number": "25", "label": "Infrastructure Projects" },
+        { "number": "Modern", "label": "Urban Design" }
+      ],
+      "scope": [
+        {
+          "icon": "🏙️",
+          "title": "Urban Infrastructure",
+          "items": [
+            "Road networks and bridges",
+            "Utility systems and drainage",
+            "Landscaping and public spaces",
+            "Public transportation facilities"
+          ]
+        },
+        {
+          "icon": "🌊",
+          "title": "Waterfront Development",
+          "items": [
+            "Marina facilities and berths",
+            "Waterfront promenades",
+            "Beach and recreation areas",
+            "Water sports facilities"
+          ]
+        },
+        {
+          "icon": "🏗️",
+          "title": "Supporting Facilities",
+          "items": [
+            "Commercial and retail areas",
+            "Residential infrastructure",
+            "Entertainment facilities",
+            "Security and access control"
+          ]
+        }
+      ],
+      "challenges": [
+        {
+          "challenge": "Urban Coordination",
+          "description": "Coordinating multiple infrastructure projects in a dense urban environment.",
+          "solution": "Developed comprehensive urban planning coordination with detailed project sequencing and traffic management."
+        },
+        {
+          "challenge": "Waterfront Engineering",
+          "description": "Managing complex waterfront engineering and marine construction.",
+          "solution": "Engaged marine engineering specialists and implemented advanced waterfront construction techniques."
+        },
+        {
+          "challenge": "Stakeholder Management",
+          "description": "Managing multiple stakeholders and public interests in urban development.",
+          "solution": "Established comprehensive stakeholder engagement programs with regular communication and consultation."
+        }
+      ],
+      "results": [
+        {
+          "icon": "✅",
+          "title": "On-Time Delivery",
+          "description": "Project completed within the 54-month schedule, meeting all urban development milestones."
+        },
+        {
+          "icon": "💰",
+          "title": "Budget Compliance",
+          "description": "Delivered within budget while exceeding all urban infrastructure specifications."
+        },
+        {
+          "icon": "🔒",
+          "title": "Perfect Safety Record",
+          "description": "Achieved zero safety incidents across 180,000+ man-hours of construction."
+        },
+        {
+          "icon": "📊",
+          "title": "Urban Excellence",
+          "description": "Development operational with world-class urban infrastructure and facilities."
+        }
+      ],
+      "testimonial": {
+        "quote": "Quantum PMC's expertise in urban development was instrumental in delivering Bahrain Bay. Their project management ensured world-class urban infrastructure and waterfront facilities.",
+        "author": "Ahmed Al-Kooheji",
+        "position": "CEO, Bahrain Bay Development Company"
+      },
+      "relatedProjects": [
+        {
+          "id": "shams-marina",
+          "title": "Shams Marina Project",
+          "description": "Luxury waterfront development",
+          "imageClass": "shams-marina"
+        },
+        {
+          "id": "hamad-port",
+          "title": "Hamad Port Project",
+          "description": "Maritime infrastructure development",
+          "imageClass": "hamad-port"
+        }
+      ]
+    },
+    "hamad-port": {
+      "id": "hamad-port",
+      "title": "Hamad Port Project, Doha",
+      "subtitle": "Maritime infrastructure development with advanced port facilities",
+      "location": "Doha, Qatar",
+      "client": "Qatar Ports Management Company",
+      "duration": "48 Months",
+      "value": "$500M",
+      "heroImage": "hamad-port-hero",
+      "overview": "The Hamad Port project represents a major maritime infrastructure development, creating a world-class port facility with advanced cargo handling capabilities and modern port operations.",
+      "description": "Our project management team oversaw the construction of comprehensive port infrastructure including berths, cargo handling facilities, and supporting infrastructure to enhance Qatar's maritime capabilities.",
+      "stats": [
+        { "number": "8", "label": "Deep-Water Berths" },
+        { "number": "2.7M", "label": "TEU Capacity" },
+        { "number": "24/7", "label": "Operations" }
+      ],
+      "scope": [
+        {
+          "icon": "🚢",
+          "title": "Port Infrastructure",
+          "items": [
+            "Deep-water berths and quays",
+            "Cargo handling equipment",
+            "Port buildings and facilities",
+            "Marine navigation systems"
+          ]
+        },
+        {
+          "icon": "🏗️",
+          "title": "Supporting Infrastructure",
+          "items": [
+            "Road networks and bridges",
+            "Utility systems and power",
+            "Security and access control",
+            "Administrative facilities"
+          ]
+        },
+        {
+          "icon": "🔧",
+          "title": "Port Operations",
+          "items": [
+            "Cargo management systems",
+            "Port security systems",
+            "Environmental protection",
+            "Safety and emergency systems"
+          ]
+        }
+      ],
+      "challenges": [
+        {
+          "challenge": "Marine Construction",
+          "description": "Managing complex marine construction in challenging coastal conditions.",
+          "solution": "Implemented advanced marine construction techniques with experienced marine engineering teams."
+        },
+        {
+          "challenge": "Cargo Systems",
+          "description": "Integrating complex cargo handling and port management systems.",
+          "solution": "Engaged port technology specialists and developed comprehensive system integration plans."
+        },
+        {
+          "challenge": "Environmental Protection",
+          "description": "Protecting marine ecosystems while developing port infrastructure.",
+          "solution": "Implemented comprehensive environmental monitoring and protection measures."
+        }
+      ],
+      "results": [
+        {
+          "icon": "✅",
+          "title": "On-Time Delivery",
+          "description": "Project completed within the 48-month schedule, meeting all port development milestones."
+        },
+        {
+          "icon": "💰",
+          "title": "Budget Compliance",
+          "description": "Delivered within budget while exceeding all maritime infrastructure specifications."
+        },
+        {
+          "icon": "🔒",
+          "title": "Perfect Safety Record",
+          "description": "Achieved zero safety incidents across 200,000+ man-hours of construction."
+        },
+        {
+          "icon": "📊",
+          "title": "Maritime Excellence",
+          "description": "Port operational with world-class cargo handling and port facilities."
+        }
+      ],
+      "testimonial": {
+        "quote": "Quantum PMC's expertise in maritime infrastructure was crucial to the success of the Hamad Port project. Their project management ensured seamless delivery of world-class port facilities.",
+        "author": "Abdullah Al-Khanji",
+        "position": "CEO, Qatar Ports Management Company"
+      },
+      "relatedProjects": [
+        {
+          "id": "bahrain-bay",
+          "title": "Bahrain Bay Development",
+          "description": "Urban infrastructure project",
+          "imageClass": "master-plan"
+        },
+        {
+          "id": "shams-marina",
+          "title": "Shams Marina Project",
+          "description": "Luxury waterfront development",
+          "imageClass": "shams-marina"
+        }
+      ]
+    },
+    "qatar-electrical-6": {
+      "id": "qatar-electrical-6",
+      "title": "Qatar Electrical Network Phase 6",
+      "subtitle": "Advanced power distribution systems and smart grid infrastructure development",
+      "location": "Qatar",
+      "client": "Qatar General Electricity & Water Corporation",
+      "duration": "36 Months",
+      "value": "$180M",
+      "heroImage": "qatar-electrical-6-hero",
+      "overview": "The Qatar Electrical Network Phase 6 project represents a significant advancement in power distribution technology, implementing smart grid systems and advanced distribution networks to enhance electrical service reliability and efficiency.",
+      "description": "Our project management team oversaw the implementation of cutting-edge electrical infrastructure including smart meters, automated distribution systems, and advanced monitoring technologies.",
+      "stats": [
+        { "number": "800MW", "label": "Power Capacity" },
+        { "number": "25", "label": "Substations" },
+        { "number": "Smart", "label": "Grid Technology" }
+      ],
+      "scope": [
+        {
+          "icon": "⚡",
+          "title": "Smart Grid Systems",
+          "items": [
+            "Advanced metering infrastructure",
+            "Distribution automation systems",
+            "Real-time monitoring networks",
+            "Load management systems"
+          ]
+        },
+        {
+          "icon": "🏗️",
+          "title": "Infrastructure Development",
+          "items": [
+            "Distribution substations",
+            "Underground cable networks",
+            "Overhead transmission lines",
+            "Equipment installations"
+          ]
+        },
+        {
+          "icon": "🔧",
+          "title": "Technology Integration",
+          "items": [
+            "SCADA control systems",
+            "Communication networks",
+            "Data analytics platforms",
+            "Cybersecurity systems"
+          ]
+        }
+      ],
+      "challenges": [
+        {
+          "challenge": "Smart Grid Integration",
+          "description": "Integrating new smart grid technologies with existing electrical infrastructure required complex coordination.",
+          "solution": "Developed comprehensive integration plans with phased implementation and extensive testing."
+        },
+        {
+          "challenge": "Technology Adoption",
+          "description": "Implementing cutting-edge electrical technologies required specialized expertise and training.",
+          "solution": "Partnered with technology providers and established comprehensive training programs."
+        },
+        {
+          "challenge": "System Reliability",
+          "description": "Ensuring continuous power supply while upgrading critical electrical infrastructure.",
+          "solution": "Implemented redundant systems and backup power solutions during upgrades."
+        }
+      ],
+      "results": [
+        {
+          "icon": "✅",
+          "title": "On-Time Delivery",
+          "description": "Project completed within the 36-month schedule, meeting all smart grid milestones."
+        },
+        {
+          "icon": "💰",
+          "title": "Budget Compliance",
+          "description": "Delivered within budget while exceeding all technical specifications."
+        },
+        {
+          "icon": "🔒",
+          "title": "Perfect Safety Record",
+          "description": "Achieved zero safety incidents across 150,000+ man-hours of construction."
+        },
+        {
+          "icon": "📊",
+          "title": "Performance Excellence",
+          "description": "Grid efficiency improved by 35% with enhanced monitoring capabilities."
+        }
+      ],
+      "testimonial": {
+        "quote": "Quantum PMC's expertise in smart grid technology was crucial to the success of Phase 6. Their project management ensured seamless integration of advanced electrical systems.",
+        "author": "Eng. Hassan Al-Mansouri",
+        "position": "Director of Smart Grid Projects, KAHRAMAA"
+      },
+      "relatedProjects": [
+        {
+          "id": "samra",
+          "title": "Samra 400kV Grid Station",
+          "description": "High-voltage electrical infrastructure",
+          "imageClass": "samra"
+        },
+        {
+          "id": "qatar-electrical",
+          "title": "Qatar Electrical Network Phase 7",
+          "description": "Power infrastructure expansion project",
+          "imageClass": "electrical"
+        }
+      ]
+    },
+    "shams-marina": {
+      "id": "shams-marina",
+      "title": "Shams Marina Project",
+      "subtitle": "Luxury waterfront development with marina facilities and premium residential units",
+      "location": "Abu Dhabi, UAE",
+      "client": "Shams Development Company",
+      "duration": "48 Months",
+      "value": "$300M",
+      "heroImage": "shams-marina-hero",
+      "overview": "The Shams Marina project represents a premium waterfront development, creating a luxurious residential and recreational destination with world-class marina facilities and high-end residential units.",
+      "description": "Our project management team coordinated complex marine construction, luxury residential development, and marina infrastructure while ensuring the highest standards of quality and luxury.",
+      "stats": [
+        { "number": "150", "label": "Berths" },
+        { "number": "200+", "label": "Residential Units" },
+        { "number": "24/7", "label": "Security" }
+      ],
+      "scope": [
+        {
+          "icon": "🚢",
+          "title": "Marina Infrastructure",
+          "items": [
+            "Deep-water berths and pontoons",
+            "Marina office and facilities",
+            "Fuel and service stations",
+            "Security and access control"
+          ]
+        },
+        {
+          "icon": "🏢",
+          "title": "Residential Development",
+          "items": [
+            "Luxury apartments and villas",
+            "Premium amenities and facilities",
+            "Landscaping and gardens",
+            "Recreational areas"
+          ]
+        },
+        {
+          "icon": "🌊",
+          "title": "Waterfront Features",
+          "items": [
+            "Promenades and walkways",
+            "Restaurants and retail",
+            "Beach and recreation areas",
+            "Water sports facilities"
+          ]
+        }
+      ],
+      "challenges": [
+        {
+          "challenge": "Marine Construction",
+          "description": "Complex marina construction in challenging marine conditions required specialized expertise.",
+          "solution": "Implemented advanced marine construction techniques with experienced marine engineering teams."
+        },
+        {
+          "challenge": "Luxury Standards",
+          "description": "Meeting premium luxury standards for high-end residential development.",
+          "solution": "Established strict quality control processes and engaged luxury construction specialists."
+        },
+        {
+          "challenge": "Environmental Protection",
+          "description": "Protecting marine ecosystems while developing waterfront infrastructure.",
+          "solution": "Implemented comprehensive environmental monitoring and protection measures."
+        }
+      ],
+      "results": [
+        {
+          "icon": "✅",
+          "title": "On-Time Delivery",
+          "description": "Project completed within the 48-month schedule, meeting all luxury development milestones."
+        },
+        {
+          "icon": "💰",
+          "title": "Budget Compliance",
+          "description": "Delivered within budget while exceeding all luxury specifications."
+        },
+        {
+          "icon": "🔒",
+          "title": "Perfect Safety Record",
+          "description": "Achieved zero safety incidents across 200,000+ man-hours of construction."
+        },
+        {
+          "icon": "📊",
+          "title": "Luxury Excellence",
+          "description": "Created a world-class marina destination with premium residential facilities."
+        }
+      ],
+      "testimonial": {
+        "quote": "Quantum PMC's expertise in luxury development was instrumental in delivering the Shams Marina project. Their project management ensured world-class quality while maintaining luxury standards.",
+        "author": "Ahmed Al-Suwaidi",
+        "position": "CEO, Shams Development Company"
+      },
+      "relatedProjects": [
+        {
+          "id": "bahrain-bay",
+          "title": "Bahrain Bay Development",
+          "description": "Urban infrastructure project",
+          "imageClass": "master-plan"
+        },
+        {
+          "id": "hamad-port",
+          "title": "Hamad Port Project, Doha",
+          "description": "Maritime infrastructure development",
+          "imageClass": "hamad-port"
+        }
+      ]
+    }
+  }
+}
