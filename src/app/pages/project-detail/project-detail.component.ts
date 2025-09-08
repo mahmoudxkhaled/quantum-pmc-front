@@ -140,7 +140,7 @@ export class ProjectDetailComponent implements OnInit {
       "relatedProjects": [
         { "id": "muscat-airport", "title": "Development of Muscat International Airport Project" },
         { "id": "king-faisal", "title": "King Faisal Specialist Hospital and Research Center" },
-        { "id": "haram", "title": "Expansion of Haram (the Holy Mosque in Makkah)" }
+        { "id": "haram-expansion", "title": "Expansion of Haram (the Holy Mosque in Makkah)" }
       ]
     },
     "hamad-port": {
