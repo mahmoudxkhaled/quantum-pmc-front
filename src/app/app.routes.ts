@@ -27,7 +27,7 @@ export const routes: Routes = [
     },
     {
         path: 'projects/:id',
-        loadComponent: () => import('./pages/projects/project-detail/project-detail.component').then(m => m.ProjectDetailComponent)
+        loadComponent: () => import('./pages/project-detail/project-detail.component').then(m => m.ProjectDetailComponent)
     },
     {
         path: 'careers',

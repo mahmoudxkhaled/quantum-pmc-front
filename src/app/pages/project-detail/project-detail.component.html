@@ -1,0 +1,89 @@
+<div class="project-detail-content" *ngIf="project">
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <h1 class="project-title">{{ project.title }}</h1>
+        </div>
+    </section>
+
+    <!-- Project Details Section -->
+    <section class="project-details">
+        <div class="container">
+            <div class="details-layout">
+                <div class="project-info">
+                    <div class="info-item">
+                        <span class="info-label">Client:</span>
+                        <span class="info-value">{{ project.client }}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Company:</span>
+                        <span class="info-value">{{ project.company }}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Scope:</span>
+                        <span class="info-value">{{ project.scope }}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Location:</span>
+                        <span class="info-value">{{ project.location }}</span>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img class="image-container" [src]="project.heroImage" [alt]="project.title">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Description -->
+    <section class="project-description">
+        <div class="container">
+            <div class="description-content">
+                <div class="description-text">
+                    <p><strong>Description:</strong> {{ project.description }}</p>
+                </div>
+                <div class="key-responsibilities">
+                    <h3>Key Responsibilities:</h3>
+                    <ul>
+                        <li *ngFor="let responsibility of project.responsibilities">{{ responsibility }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Images Grid -->
+    <section class="project-images" *ngIf="project.images && project.images.length > 0">
+        <div class="container">
+            <div class="images-grid">
+                <div class="image-item" *ngFor="let image of project.images">
+                    <img [src]="image" [alt]="project.title + ' - Project Image'" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- You May Also Like Section -->
+    <section class="related-projects">
+        <div class="container">
+            <div class="related-header">
+                <h2 class="related-title">You May Also Like</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="related-links">
+                <a [routerLink]="['/projects', relatedProject.id]" class="related-link"
+                    *ngFor="let relatedProject of project.relatedProjects">
+                    {{ relatedProject.title }} / Projects
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Error State -->
+<div class="error-state" *ngIf="error">
+    <div class="error-icon">⚠️</div>
+    <h2>Project Not Found</h2>
+    <p>{{ error }}</p>
+    <a routerLink="/projects" class="cta-button primary">Back to Projects</a>
+</div>

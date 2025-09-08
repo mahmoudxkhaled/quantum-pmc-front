@@ -27,10 +27,12 @@ export const appConfig: ApplicationConfig = {
         const zone = inject(NgZone);
         zone.runOutsideAngular(() => {
           router.events.pipe(filter(e => e instanceof NavigationEnd)).subscribe(() => {
-            try {
-              window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-            } catch {
-              window.scrollTo(0, 0);
+            if (typeof window !== 'undefined') {
+              try {
+                window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+              } catch {
+                window.scrollTo(0, 0);
+              }
             }
           });
         });
