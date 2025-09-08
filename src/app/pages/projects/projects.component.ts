@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 interface ProjectListItem {
   id: string;
@@ -22,6 +23,9 @@ interface ProjectListItem {
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
+  constructor(private title: Title) {
+    this.title.setTitle('Projects | Quantum PMC');
+  }
   projects: ProjectListItem[] = [
     {
       id: 'haram-expansion',

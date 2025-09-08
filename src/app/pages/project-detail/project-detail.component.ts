@@ -1,4 +1,5 @@
 import { Component, OnInit, inject } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { RouterModule, ActivatedRoute } from '@angular/router';
 
@@ -28,6 +29,7 @@ interface ProjectData {
 })
 export class ProjectDetailComponent implements OnInit {
   private route = inject(ActivatedRoute);
+  private title = inject(Title);
 
   project: ProjectData | null = null;
   error: string | null = null;
@@ -286,6 +288,10 @@ export class ProjectDetailComponent implements OnInit {
       const projectId = params['id'];
       if (projectId) {
         this.loadProject(projectId);
+        const project = this.projectsData[projectId as keyof typeof this.projectsData];
+        if (project) {
+          this.title.setTitle(`${project.title} | Quantum PMC`);
+        }
       }
     });
   }

@@ -165,11 +165,12 @@
                 <div class="projects-slider">
                     <div class="project-slide" *ngFor="let project of projects; let i = index"
                         [class.active]="i === currentProject">
-                        <div class="project-image" [style.background-image]="'url(' + project.image + ')'">
+                        <div class="project-image" [style.background-image]="'url(' + project.image + ')'"
+                            [routerLink]="['/projects', project.id]" style="cursor: pointer;">
                             <div class="project-overlay">
                                 <h3 class="project-title">{{ project.title }}</h3>
                                 <p class="project-location">{{ project.location }}</p>
-                                <a routerLink="/projects" class="project-link">
+                                <a [routerLink]="['/projects', project.id]" class="project-link">
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
@@ -12,6 +13,9 @@ import { BannerComponent } from '../../common/banner/banner.component';
     styleUrls: ['./careers.component.scss']
 })
 export class CareersComponent {
+    constructor(private title: Title) {
+        this.title.setTitle('Careers | Quantum PMC');
+    }
     isSubmitting = false;
 
     formData = {

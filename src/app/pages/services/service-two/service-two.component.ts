@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { BannerComponent } from '../../../common/banner/banner.component';
@@ -10,4 +11,8 @@ import { BannerComponent } from '../../../common/banner/banner.component';
     templateUrl: './service-two.component.html',
     styleUrls: ['./service-two.component.scss']
 })
-export class ServiceTwoComponent { }
+export class ServiceTwoComponent {
+    constructor(private title: Title) {
+        this.title.setTitle('Claims Management Services | Quantum PMC');
+    }
+}

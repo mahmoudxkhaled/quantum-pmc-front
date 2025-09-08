@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
@@ -135,4 +136,8 @@ import { RouterModule } from '@angular/router';
     }
   `]
 })
-export class ServicesComponent { }
+export class ServicesComponent {
+  constructor(private title: Title) {
+    this.title.setTitle('Services | Quantum PMC');
+  }
+}

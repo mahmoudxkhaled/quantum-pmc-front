@@ -3,10 +3,10 @@
     <div class="header-content">
         <div class="logo-section">
             <div class="logo">
-                <div class="logo-symbol">
+                <div class="logo-symbol" [routerLink]="['/']" style="cursor: pointer;">
                     <img src="assets/Images/cropped-logo-180x180.png" alt="Quantum PMC Logo" class="logo-image">
                 </div>
-                <div class="logo-text">
+                <div class="logo-text" [routerLink]="['/']" style="cursor: pointer;">
                     <h1 class="company-name">{{ companyName() }}</h1>
                     <p class="company-tagline">{{ companyTagline() }}</p>
                 </div>
