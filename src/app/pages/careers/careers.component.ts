@@ -51,7 +51,6 @@ export class CareersComponent {
                 this.isSubmitting = false;
                 this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Thank you! Your application has been submitted successfully.', life: 5000 });
 
-                // Reset form data
                 this.formData = {
                     position: '',
                     name: '',
@@ -62,7 +61,6 @@ export class CareersComponent {
                     linkedin: ''
                 };
 
-                // Reset form state to hide validation messages
                 careerForm.resetForm();
             },
             error: (error) => {

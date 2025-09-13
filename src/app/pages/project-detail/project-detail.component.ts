@@ -43,14 +43,14 @@ export class ProjectDetailComponent implements OnInit {
       "client": "King Faisal Specialist Hospital",
       "company": "Saudi Binladin Group (SBG)",
       "scope": "Main Contractor (EPC)",
-      "heroImage": "assets/Images/king-faisal-1.jpg",
-      "description": "The contract involved the construction of a new medical center north of Jeddah, including several medical buildings, research and academic buildings, an admin building, several utility buildings, and associated infrastructure. The contract's value was about 3.7 billion SARs (nearly 1 billion USDs).", t
+      "heroImage": "assets/Images/king-faisal/king-faisal-main.jpg",
+      "description": "The contract involved the construction of a new medical center north of Jeddah, including several medical buildings, research and academic buildings, an admin building, several utility buildings, and associated infrastructure. The contract's value was about 3.7 billion SARs (nearly 1 billion USDs).",
       "responsibilities": [
         "The establishment of the project's claims structure and the management of claims preparation, including prolongation costs claims, disruption claims, escalation of rates claims, and other work-related claims"
       ],
       "images": [
-        "assets/Images/king-faisal-1.jpg",
-        "assets/Images/king-faisal-2.jpg",
+        "assets/Images/king-faisal/king-faisal-main.jpg",
+        "assets/Images/king-faisal/king-faisal-2.jpg",
       ],
       "relatedProjects": [
         { "id": "qatalum", "title": "Qatar Aluminum Factory [Qatalum]" },
@@ -65,7 +65,7 @@ export class ProjectDetailComponent implements OnInit {
       "client": "Jordan Electrical Authority",
       "company": "VATech Reyrolle",
       "scope": "Main Contractor (EPC)",
-      "heroImage": "assets/Images/Samra.jpg",
+      "heroImage": "assets/Images/samra/samra-main.jpg",
       "description": "Construction of a 400kV Grid Station in the Samra region, Jordan, with a total value of about 22 million USDs",
       "responsibilities": [
         "Planning, master schedule management, and resource management"
@@ -86,7 +86,7 @@ export class ProjectDetailComponent implements OnInit {
       "client": "Al-Reem Island",
       "company": "Athena Emirates LLC",
       "scope": "Contractor",
-      "heroImage": "assets/Images/Shams.jpg",
+      "heroImage": "assets/Images/shams/shams-main.jpg",
       "description": "The project comprised the construction of a 2.0 km Sea Wall, a 0.7 km Marina Wall, and the dredging of a lagoon within Al Reem Island in Abu Dhabi.",
       "responsibilities": [
         "Planning, management of resource utilization, and EoT claims"
@@ -106,14 +106,14 @@ export class ProjectDetailComponent implements OnInit {
       "client": "Bahrain Bay",
       "company": "Hill International",
       "scope": "PMC Services",
-      "heroImage": "assets/Images/Bahrain-hero.jpg",
+      "heroImage": "assets/Images/bahrain-bay/bahrain-bay-main.jpg",
       "description": "Bahrain Bay is a development project with a total size of 432,000 m2 consisting of an island connected to the mainland via causeways, with a mixed-use boulevard, a variety of buildings and amenities, including residential towers, cultural venues, an upscale hotel, and a verdant park. <br> <br> The project's infrastructure phase involved the construction of 4 bridges, MV substations, fire & potable water tanks and networks, a district cooling network, irrigation pump stations, as well as the construction of all road works. The infrastructure PMC contract value was about 220 million QARs (about 60 million USDs).",
       "responsibilities": [
         "Planning, cost control, and EoT claims"
       ],
       "images": [
-        "assets/Images/Bahrain-1.jpg",
-        "assets/Images/Bahrain-2.jpg",
+        "assets/Images/bahrain-bay/bahrain-bay-1.jpg",
+        "assets/Images/bahrain-bay/bahrain-bay-2.jpg",
       ],
       "relatedProjects": [
         { "id": "qatar-electrical-6", "title": "The Expansion of Qatar Electrical Network [Phase 6]" },
@@ -128,14 +128,14 @@ export class ProjectDetailComponent implements OnInit {
       "client": "Qatar Aluminum [Qatalum]",
       "company": "Consolidated Contractors Company (CCC)",
       "scope": "Contractor",
-      "heroImage": "assets/Images/QAF-1.jpg",
+      "heroImage": "assets/Images/qatalum/qatalum-main.jpg",
       "description": "The construction of Qatar Aluminum Factory (Qatalum), the largest aluminum factory constructed worldwide in one phase, with a total value of 3.5 billion QARs.",
       "responsibilities": [
         "Planning and progress monitoring, in addition to the detailed scheduling of resources & operations for the precast production facilities"
       ],
       "images": [
-        "assets/Images/QAF-1.jpg",
-        "assets/Images/QAF-2.jpg",
+        "assets/Images/qatalum/qatalum-main.jpg",
+        "assets/Images/qatalum/qatalum-2.jpg",
       ],
       "relatedProjects": [
         { "id": "muscat-airport", "title": "Development of Muscat International Airport Project" },
@@ -150,14 +150,14 @@ export class ProjectDetailComponent implements OnInit {
       "client": "Ministry of Transport",
       "company": "Ministry Project Team",
       "scope": "Client Support",
-      "heroImage": "assets/Images/Hamad-1.jpg",
+      "heroImage": "assets/Images/hamad-port/hamad-port-main.jpg",
       "description": "The project involved the construction of a new seaport south of Doha, with a new base for Qatari naval forces, and the construction of Qatar Economic Zone, spanning more than 26 square kilometers. The project's total value was 27 billion QARs (7.4 billion USDs).",
       "responsibilities": [
         "Planning and master schedule management, delay and concurrency analysis, and claims evaluation"
       ],
       "images": [
-        "assets/Images/Hamad-1.jpg",
-        "assets/Images/Hamad-2.jpg",
+        "assets/Images/hamad-port/hamad-port-main.jpg",
+        "assets/Images/hamad-port/hamad-port-2.jpg",
       ],
       "relatedProjects": [
         { "id": "shams", "title": "Shams Abu Dhabi Marina & Sea Wall Project" },
@@ -172,21 +172,21 @@ export class ProjectDetailComponent implements OnInit {
       "client": "Qatar Electricity & Water Authority (Kahramaa)",
       "company": "Siemens PTD",
       "scope": "Main Contractor (EPC)",
-      "heroImage": "assets/Images/EQON6-hero.jpg",
+      "heroImage": "assets/Images/qatar-electrical-6/qatar-electrical-6-main.jpg",
       "description": "Expanding the capacity of Qatar's electricity network through the construction of 15 new substations, the extension of 5 existing substations, and constructing 23 new HV/MV cable routes. The project's total value was 1.8 billion QARs (490 million USDs). The project's infrastructure phase involved the construction of 4 bridges, MV substations, fire & potable water tanks and networks, a district cooling network, irrigation pump stations, as well as the construction of all road works. The infrastructure PMC contract value was about 220 million QARs (about 60 million USDs).",
       "responsibilities": [
         "Planning team establishment, procedures, baseline preparation, progress monitoring, KPIs, and resource control"
       ],
       "images": [
-        "assets/Images/EQON6-1.jpg",
-        "assets/Images/EQON6-2.jpg",
-        "assets/Images/EQON6-3.jpg",
-        "assets/Images/EQON6-4.jpg",
-        "assets/Images/EQON6-5.jpg",
-        "assets/Images/EQON6-6.jpg",
-        "assets/Images/EQON6-7.jpg",
-        "assets/Images/EQON6-8.jpg",
-        "assets/Images/EQON6-9.jpg",
+        "assets/Images/qatar-electrical-6/qatar-electrical-6-1.jpg",
+        "assets/Images/qatar-electrical-6/qatar-electrical-6-2.jpg",
+        "assets/Images/qatar-electrical-6/qatar-electrical-6-3.jpg",
+        "assets/Images/qatar-electrical-6/qatar-electrical-6-4.jpg",
+        "assets/Images/qatar-electrical-6/qatar-electrical-6-5.jpg",
+        "assets/Images/qatar-electrical-6/qatar-electrical-6-6.jpg",
+        "assets/Images/qatar-electrical-6/qatar-electrical-6-7.jpg",
+        "assets/Images/qatar-electrical-6/qatar-electrical-6-8.jpg",
+        "assets/Images/qatar-electrical-6/qatar-electrical-6-9.jpg",
 
       ],
       "relatedProjects": [
@@ -202,18 +202,18 @@ export class ProjectDetailComponent implements OnInit {
       "client": "Qatar Electricity & Water Authority (Kahramaa)",
       "company": "Siemens PTD",
       "scope": "Main Contractor (EPC)",
-      "heroImage": "assets/Images/EQON7-hero.jpg",
+      "heroImage": "assets/Images/qatar-electrical-7/qatar-electrical-7-main.jpg",
       "description": "One of the largest contracts ever awarded by KAHRAMAA (Qatar's general electricity & water corporation). The project comprised 28 new substations and the extension of 21 existing substations, with a total value of 3.2 billion QARs (about 880 million USDs).",
       "responsibilities": [
         "Planning team establishment, procedures, baseline preparation, progress monitoring, KPIs, and resource control"
       ],
       "images": [
-        "assets/Images/EQON7-1.jpg",
-        "assets/Images/EQON7-2.jpg",
-        "assets/Images/EQON7-3.jpg",
-        "assets/Images/EQON7-4.jpg",
-        "assets/Images/EQON7-5.jpg",
-        "assets/Images/EQON7-6.jpg",
+        "assets/Images/qatar-electrical-7/qatar-electrical-7-1.jpg",
+        "assets/Images/qatar-electrical-7/qatar-electrical-7-2.jpg",
+        "assets/Images/qatar-electrical-7/qatar-electrical-7-3.jpg",
+        "assets/Images/qatar-electrical-7/qatar-electrical-7-4.jpg",
+        "assets/Images/qatar-electrical-7/qatar-electrical-7-5.jpg",
+        "assets/Images/qatar-electrical-7/qatar-electrical-7-6.jpg",
       ],
       "relatedProjects": [
         { "id": "king-faisal", "title": "King Faisal Specialist Hospital and Research Center" },
@@ -228,7 +228,7 @@ export class ProjectDetailComponent implements OnInit {
       "client": "Ministry of Transportation",
       "company": "CCC/TAV Joint Venture",
       "scope": "Main Contractor (MC1)",
-      "heroImage": "assets/Images/DOM-1.jpg",
+      "heroImage": "assets/Images/muscat-airport/muscat-airport-main.jpg",
       "description": "The Development of Muscat International Airport project was the largest airport project in Oman, providing an important gateway into the capital city of Muscat. MC1 works comprised the construction of a new airfield area (runway, taxiways, and aprons), refurbishment of an existing airfield, 43 new buildings (substations & utility buildings), several large utility networks (high voltage, medium voltage, and low voltage power networks, sewerage system, chilled water system, potable water network, fire fighting network, and fuel hydrant network), storm water drainage system, as well as a roads & bridges network (7 new bridges and about 30 roads from minor to highways). The contract's total value was 450 million OMR (about 1.2 billion USD).",
       "responsibilities": [
         "Project planning & master scheduling",
@@ -240,7 +240,7 @@ export class ProjectDetailComponent implements OnInit {
         "Support in the arbitration process and the preparation of related documents including witness statements"
       ],
       "images": [
-        "assets/Images/DOM-2.jpg",
+        "assets/Images/muscat-airport/muscat-airport-2.jpg",
       ],
       "relatedProjects": [
         { "id": "samra", "title": "Samra 400kV Grid Station, Jordan" },
@@ -255,7 +255,7 @@ export class ProjectDetailComponent implements OnInit {
       "client": "Ministry of Finance",
       "company": "Saudi Binladin Group (SBG)",
       "scope": "Main Contractor (EPC)",
-      "heroImage": "assets/Images/HE-Hero.jpg",
+      "heroImage": "assets/Images/haram-expansion/haram-expansion-main.jpg",
       "description": `The expansion of Haram comprised a large project portfolio and extended for more than 10 years, with massive complexity in the working environment within a live congested area and in the most holy Islamic place. The project portfolio was organized under several cost-plus contracts, and the overall value at completion was estimated to be nearly 200 billion SARs (more than 50 billion USDs). The key projects in Haram Expansion's portfolio were:`,
       "responsibilities": [
         "Establishment of Haramain Division's cost control department, including recruitment, development of cost breakdown structure, procedures, analysis, etc.",
@@ -265,15 +265,15 @@ export class ProjectDetailComponent implements OnInit {
         "Follow-up for other project controls functions"
       ],
       "images": [
-        "assets/Images/HE-1.jpg",
-        "assets/Images/HE-2.jpg",
-        "assets/Images/HE-3.jpg",
-        "assets/Images/HE-4.jpg",
-        "assets/Images/HE-5.jpg",
-        "assets/Images/HE-6.jpg",
-        "assets/Images/HE-7.jpg",
-        "assets/Images/HE-8.jpg",
-        "assets/Images/HE-9.jpg"
+        "assets/Images/haram-expansion/haram-expansion-1.jpg",
+        "assets/Images/haram-expansion/haram-expansion-2.jpg",
+        "assets/Images/haram-expansion/haram-expansion-3.jpg",
+        "assets/Images/haram-expansion/haram-expansion-4.jpg",
+        "assets/Images/haram-expansion/haram-expansion-5.jpg",
+        "assets/Images/haram-expansion/haram-expansion-6.jpg",
+        "assets/Images/haram-expansion/haram-expansion-7.jpg",
+        "assets/Images/haram-expansion/haram-expansion-8.jpg",
+        "assets/Images/haram-expansion/haram-expansion-9.jpg"
       ],
       "relatedProjects": [
         { "id": "shams", "title": "Shams Abu Dhabi Marina & Sea Wall Project" },

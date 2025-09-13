@@ -35,7 +35,7 @@ export class ProjectsComponent {
       scope: 'Main Contractor (EPC)',
       location: 'Makkah, Saudi Arabia',
       description: 'Sacred religious site expansion project involving complex architectural design, cultural sensitivity, and massive scale construction.',
-      image: 'assets/Images/HL-Project-Photo-890x664.png',
+      image: 'assets/Images/haram-expansion/haram-expansion-project-890.png',
       tags: ['Religious', 'Cultural', 'Architecture']
     },
     {
@@ -46,7 +46,7 @@ export class ProjectsComponent {
       scope: 'Main Contractor (MC1)',
       location: 'Muscat, Oman',
       description: 'Major airport expansion and modernization project including terminal buildings, runways, and supporting infrastructure.',
-      image: 'assets/Images/Layout-890x664.jpg',
+      image: 'assets/Images/muscat-airport/muscat-airport-layout.jpg',
       tags: ['Aviation', 'Infrastructure', 'Transportation']
     },
     {
@@ -57,7 +57,7 @@ export class ProjectsComponent {
       scope: 'Main Contractor (EPC)',
       location: 'Doha, Qatar',
       description: 'National electrical grid expansion project including substations, transmission lines, and smart grid technology implementation.',
-      image: 'assets/Images/P7-TX2-890x664.jpg',
+      image: 'assets/Images/qatar-electrical-7/qatar-electrical-7-tx2-890.jpg',
       tags: ['Power', 'Smart Grid', 'Infrastructure']
     },
     {
@@ -68,7 +68,7 @@ export class ProjectsComponent {
       scope: 'Main Contractor (EPC)',
       location: 'Doha, Qatar',
       description: 'Advanced electrical network expansion with modern power distribution systems and renewable energy integration.',
-      image: 'assets/Images/P6-GIS-890x664.jpg',
+      image: 'assets/Images/qatar-electrical-6/qatar-electrical-6-gis-890.jpg',
       tags: ['Power', 'Renewable', 'Distribution']
     },
     {
@@ -79,7 +79,7 @@ export class ProjectsComponent {
       scope: 'Client Support',
       location: 'Doha, Qatar',
       description: 'Major seaport development including container terminals, cargo handling facilities, and maritime infrastructure for international trade.',
-      image: 'assets/Images/small-layout.jpg',
+      image: 'assets/Images/hamad-port/hamad-port-layout.jpg',
       tags: ['Maritime', 'Port', 'Trade']
     },
     {
@@ -90,7 +90,7 @@ export class ProjectsComponent {
       scope: 'Contractor',
       location: 'Doha, Qatar',
       description: 'Large-scale industrial facility construction for aluminum production with advanced manufacturing processes and environmental controls.',
-      image: 'assets/Images/external-photo-890x664.jpg',
+      image: 'assets/Images/qatalum/qatalum-external.jpg',
       tags: ['Industrial', 'Manufacturing', 'Aluminum']
     },
     {
@@ -101,7 +101,7 @@ export class ProjectsComponent {
       scope: 'PMC Services',
       location: 'Manama, Bahrain',
       description: 'Comprehensive urban development including roads, utilities, landscaping, and supporting infrastructure for a new waterfront district.',
-      image: 'assets/Images/Master-Plan-890x620.png',
+      image: 'assets/Images/bahrain-bay/bahrain-bay-master-plan.png',
       tags: ['Urban', 'Infrastructure', 'Waterfront']
     },
     {
@@ -112,7 +112,7 @@ export class ProjectsComponent {
       scope: 'Contractor',
       location: 'Abu Dhabi, UAE',
       description: 'Luxury marina development with sea wall protection, including berthing facilities, recreational areas, and coastal engineering works.',
-      image: 'assets/Images/Shams-Project-890x664.png',
+      image: 'assets/Images/shams/shams-project-890.png',
       tags: ['Marina', 'Coastal', 'Luxury']
     },
     {
@@ -123,7 +123,7 @@ export class ProjectsComponent {
       scope: 'Main Contractor (EPC)',
       location: 'Hashimya, Jordan',
       description: 'High-voltage electrical infrastructure project for the national power grid, involving complex engineering and construction management.',
-      image: 'assets/Images/overall-layout.jpg',
+      image: 'assets/Images/samra/samra-main.jpg',
       tags: ['Infrastructure', 'Electrical', 'Government']
     },
     {
@@ -134,7 +134,7 @@ export class ProjectsComponent {
       scope: 'Main Contractor (EPC)',
       location: 'Jeddah, Saudi Arabia',
       description: 'State-of-the-art medical facility construction with advanced healthcare technology integration and specialized medical units.',
-      image: 'assets/Images/external-photo-890x664.jpg',
+      image: 'assets/Images/king-faisal/king-faisal-main.jpg',
       tags: ['Healthcare', 'Hospital', 'Research']
     }
   ];

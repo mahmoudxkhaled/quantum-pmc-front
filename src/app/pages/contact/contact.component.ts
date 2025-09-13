@@ -52,7 +52,6 @@ export class ContactComponent {
 
         this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Thank you! Your message has been sent successfully.', life: 5000 });
 
-        // Reset form data
         this.formData = {
           name: '',
           email: '',
@@ -61,7 +60,6 @@ export class ContactComponent {
           message: ''
         };
 
-        // Reset form state to hide validation messages
         contactForm.resetForm();
       },
       error: (error) => {
