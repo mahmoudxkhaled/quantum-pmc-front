@@ -56,6 +56,7 @@
   border: 2px solid #e1e8ed;
   border-radius: 8px;
   background: white;
+  color: #2c3e50;
   font-size: 1rem;
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
   appearance: none;
@@ -88,6 +89,7 @@
   backdrop-filter: blur(4px);
 }
 
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -103,6 +105,7 @@
   font-size: 1rem;
   transition: border-color 0.3s ease;
   background: white;
+  color: #2c3e50;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02) inset;
 }
 
@@ -128,6 +131,12 @@
   outline: none;
   border-color: #3498db;
   box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.15);
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #95a5b0;
+  opacity: 1;
 }
 
 .btn-apply {

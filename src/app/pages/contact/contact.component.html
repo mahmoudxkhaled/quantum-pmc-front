@@ -16,7 +16,8 @@
                 <p>Email: info@quantum-pmc.com</p>
             </div>
 
-            <form class="apply-form" #contactForm="ngForm" (ngSubmit)="contactForm.valid && onSubmit()" novalidate>
+            <form class="apply-form" #contactForm="ngForm" (ngSubmit)="contactForm.valid && onSubmit(contactForm)"
+                novalidate>
                 <div class="grid">
                     <div class="field">
                         <input type="text" name="name" [(ngModel)]="formData.name" placeholder="Name" required

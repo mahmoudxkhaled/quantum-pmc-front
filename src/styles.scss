@@ -1,3 +1,69 @@
+/* PrimeNG Styles - Using new v18+ approach with Aura theme */
+
+/* Custom Toast Styles for PrimeNG v18+ with Aura theme */
+.p-toast {
+  z-index: 9999;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.p-toast .p-toast-message {
+  margin: 0 0 1rem 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #ffffff !important;
+  backdrop-filter: blur(10px);
+}
+
+.p-toast .p-toast-message.p-toast-message-success {
+  background: #ffffff !important;
+  border-left: 4px solid #10b981;
+  color: #065f46 !important;
+}
+
+.p-toast .p-toast-message.p-toast-message-error {
+  background: #ffffff !important;
+  border-left: 4px solid #ef4444;
+  color: #991b1b !important;
+}
+
+.p-toast .p-toast-message .p-toast-message-content {
+  padding: 1.25rem 1.5rem;
+  background: transparent !important;
+}
+
+.p-toast .p-toast-message .p-toast-message-content .p-toast-message-text {
+  margin: 0;
+  color: inherit !important;
+}
+
+.p-toast .p-toast-message .p-toast-message-content .p-toast-summary {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: inherit !important;
+  font-size: 1rem;
+}
+
+.p-toast .p-toast-message .p-toast-message-content .p-toast-detail {
+  color: inherit !important;
+  opacity: 0.9;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.p-toast .p-toast-message .p-toast-message-content .p-toast-icon-close {
+  color: inherit !important;
+  opacity: 0.7;
+  background: transparent !important;
+}
+
+.p-toast .p-toast-message .p-toast-message-content .p-toast-icon-close:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.05) !important;
+}
+
 /* Global styles */
 * {
   margin: 0;

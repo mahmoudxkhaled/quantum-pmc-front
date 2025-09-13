@@ -1,7 +1,6 @@
 <app-banner title="Careers" description="We are always looking for talented people to join our team"
     backgroundImage="assets/images/pattern/04.png"></app-banner>
 
-
 <div class="careers">
     <div class="container">
         <!-- <div class="hero-image">
@@ -10,7 +9,7 @@
 
         <h2 class="apply-title">Apply</h2>
 
-        <form class="apply-form" #careerForm="ngForm" (ngSubmit)="careerForm.valid && onSubmit()" novalidate>
+        <form class="apply-form" #careerForm="ngForm" (ngSubmit)="careerForm.valid && onSubmit(careerForm)" novalidate>
             <div class="available-posts">
                 <label for="postSelect" class="sr-only">Currently available posts:</label>
                 <select id="postSelect" name="position" [(ngModel)]="formData.position" required>
