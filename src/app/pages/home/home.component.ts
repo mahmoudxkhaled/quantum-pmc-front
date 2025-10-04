@@ -25,61 +25,61 @@ export class HomeComponent {
       id: 'samra',
       title: "Samra 400kV Grid Station",
       location: "Hashimya, Jordan",
-      image: "assets/Images/overall-layout.jpg"
+      image: "assets/Images/samra/samra-main.jpg"
     },
     {
       id: 'king-faisal',
       title: "King Faisal Specialist Hospital and Research Center",
       location: "Jeddah, Saudi Arabia",
-      image: "assets/Images/image-1.jpg"
+      image: "assets/Images/king-faisal/king-faisal-main.jpg"
     },
     {
       id: 'muscat-airport',
       title: "Development of Muscat International Airport Project",
       location: "Muscat, Oman",
-      image: "assets/Images/Layout-Copy-1.jpg"
+      image: "assets/Images/muscat-airport/muscat-airport-layout-2.jpg"
     },
     {
       id: 'qatalum',
       title: "Qatar Aluminum Factory [Qatalum]",
       location: "Doha, Qatar",
-      image: "assets/Images/external-photo.jpg"
+      image: "assets/Images/qatalum/qatalum-external-full.jpg"
     },
     {
       id: 'haram-expansion',
       title: "Expansion of Haram (the Holy Mosque in Makkah)",
       location: "Makkah, Saudi Arabia",
-      image: "assets/Images/Haram-HL-Photo-In-Progress-1024x519.jpg"
+      image: "assets/Images/haram-expansion/haram-expansion-progress.jpg"
     },
     {
       id: 'qatar-electrical-7',
       title: "The Expansion of Qatar Electrical Network [Phase 7]",
       location: "Doha, Qatar",
-      image: "assets/Images/P7-TX2.jpg"
+      image: "assets/Images/qatar-electrical-7/qatar-electrical-7-tx2.jpg"
     },
     {
       id: 'bahrain-bay',
       title: "Bahrain Bay Development Project – Infrastructure Works",
       location: "Manama, Bahrain",
-      image: "assets/Images/Master-Plan-1024x406.png"
+      image: "assets/Images/bahrain-bay/bahrain-bay-master-plan-large.png"
     },
     {
       id: 'hamad-port',
       title: "Hamad Port Project, Doha, Qatar",
       location: "Doha, Qatar",
-      image: "assets/Images/small-layout.jpg"
+      image: "assets/Images/hamad-port/hamad-port-layout.jpg"
     },
     {
       id: 'qatar-electrical-6',
       title: "The Expansion of Qatar Electrical Network [Phase 6]",
       location: "Doha, Qatar",
-      image: "assets/Images/P6-GIS-1024x768.jpg"
+      image: "assets/Images/qatar-electrical-6/qatar-electrical-6-gis.jpg"
     },
     {
       id: 'shams',
       title: "Shams Abu Dhabi Marina & Sea Wall Project",
       location: "Abu Dhabi, UAE",
-      image: "assets/Images/Shams-Project-890x664.png"
+      image: "assets/Images/shams/shams-project-890.png"
     }
   ];
 

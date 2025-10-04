@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../../environments/environment';
 
 export interface ContactFormData {
     name: string;
@@ -31,7 +32,7 @@ export interface ApiResponse {
     providedIn: 'root'
 })
 export class ApiService {
-    private baseUrl = 'http://localhost:4000/api';
+    private baseUrl = environment.apiUrl;
     private httpOptions = {
         headers: new HttpHeaders({
             'Content-Type': 'application/json'
@@ -49,6 +50,6 @@ export class ApiService {
     }
 
     checkHealth(): Observable<{ ok: boolean }> {
-        return this.http.get<{ ok: boolean }>(`http://localhost:4000/health`);
+        return this.http.get<{ ok: boolean }>(`${this.baseUrl}/health`);
     }
 }
