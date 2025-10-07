@@ -11,8 +11,8 @@ import { RouterModule } from '@angular/router';
 })
 export class FooterComponent {
     // Company information
-    companyName: string = 'Quantum PMC LLC';
-    companyTagline: string = 'PROJECT MANAGEMENT & CLAIMS SERVICES';
+    companyName: string = 'Quantum PMC';
+    companyTagline: string = 'PROJECT MANAGEMENT<br> & CLAIMS SERVICES';
     companyAddress: string = 'Al-Ansab, PO Box: B3897-900 - Muscat, Sultanate of Oman';
     companyDescription: string = 'With more than 20 years of experience in the construction industry within the middle east, our team have developed a diverse experience and knowledge of the region\'s needs and challenges with respect to complex construction projects management and disputes handling up to resolution.';
 

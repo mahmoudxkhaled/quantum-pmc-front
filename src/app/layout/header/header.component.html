@@ -8,7 +8,7 @@
                 </div>
                 <div class="logo-text" [routerLink]="['/']" style="cursor: pointer;">
                     <h1 class="company-name">{{ companyName() }}</h1>
-                    <p class="company-tagline">{{ companyTagline() }}</p>
+                    <p class="company-tagline" [innerHTML]="companyTagline()"></p>
                 </div>
             </div>
         </div>

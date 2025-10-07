@@ -39,8 +39,8 @@ export class HeaderComponent {
 
     constructor(private router: Router) { }
 
-    protected readonly companyName = signal('Quantum');
-    protected readonly companyTagline = signal('PROJECT MANAGEMENT & CLAIMS SERVICES');
+    protected readonly companyName = signal('Quantum PMC');
+    protected readonly companyTagline = signal('PROJECT MANAGEMENT<br> & CLAIMS SERVICES');
 
     isServiceActive(item: NavigationItem): boolean {
         if (!item.hasDropdown || !item.dropdownItems) {
