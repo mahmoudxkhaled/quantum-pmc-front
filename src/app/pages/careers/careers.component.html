@@ -57,14 +57,26 @@
                 </div>
                 <div class="field full">
                     <input type="url" name="linkedin" [(ngModel)]="formData.linkedin" placeholder="LinkedIn Profile"
-                        required pattern="^(https?:\/\/)?(www\.)?(linkedin\.com|lnkd\.in)\/.+$" />
-                    <small class="error"
-                        *ngIf="careerForm.submitted && careerForm.controls['linkedin']?.errors?.['required']">LinkedIn
-                        profile is required</small>
+                        pattern="^(https?:\/\/)?(www\.)?(linkedin\.com|lnkd\.in)\/.+$" />
                     <small class="error"
                         *ngIf="careerForm.submitted && careerForm.controls['linkedin']?.errors?.['pattern']">Enter a
                         valid LinkedIn URL</small>
                 </div>
+            </div>
+            <div class="field full" style="margin-top: 20px;">
+                <div style="margin-bottom: 5px;">
+                    <label for="cvFile" style=" width: 100%;
+                    padding: 0.75rem;
+                    border-radius: 10px;
+                    font-size: 1rem;
+                    transition: border-color 0.3s ease;
+                    color: #2c3e50;
+                    ">Upload CV</label>
+                </div>
+                <input id="cvFile" #fileInput type="file" name="file" (change)="onFileChange($event)"
+                    accept=".pdf,.doc,.docx" />
+                <small class="error" *ngIf="careerForm.submitted && !selectedFile">Please upload your CV (PDF, DOC, or
+                    DOCX)</small>
             </div>
             <button type="submit" class="btn-apply" [disabled]="isSubmitting">{{ isSubmitting ? 'Submitting...' :
                 'Apply' }}</button>

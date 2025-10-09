@@ -45,8 +45,20 @@ export class ApiService {
         return this.http.post<ApiResponse>(`${this.baseUrl}/contact`, data, this.httpOptions);
     }
 
-    submitCareerForm(data: CareerFormData): Observable<ApiResponse> {
-        return this.http.post<ApiResponse>(`${this.baseUrl}/careers`, data, this.httpOptions);
+    submitCareerForm(data: CareerFormData): Observable<ApiResponse>;
+    submitCareerForm(data: FormData): Observable<ApiResponse>;
+    submitCareerForm(data: CareerFormData | FormData): Observable<ApiResponse> {
+        const isFormData = (typeof FormData !== 'undefined') && (data instanceof FormData);
+        if (isFormData) {
+            // Do NOT set Content-Type header; the browser will set it with proper boundary
+            return this.http.post<ApiResponse>(`${this.baseUrl}/careers`, data);
+        }
+        return this.http.post<ApiResponse>(`${this.baseUrl}/careers`, data as CareerFormData, this.httpOptions);
+    }
+
+    submitCareerFormMultipart(formData: FormData): Observable<ApiResponse> {
+        // Explicit method to avoid overload ambiguity at call sites
+        return this.http.post<ApiResponse>(`${this.baseUrl}/careers`, formData);
     }
 
     checkHealth(): Observable<{ ok: boolean }> {

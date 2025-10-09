@@ -30,23 +30,37 @@ export class CareersComponent {
         linkedin: ''
     };
 
+    selectedFile: File | null = null;
+
+    onFileChange(event: Event): void {
+        const input = event.target as HTMLInputElement;
+        this.selectedFile = (input.files && input.files.length > 0) ? input.files[0] : null;
+    }
+
     onSubmit(careerForm: any): void {
         if (this.isSubmitting) {
             return;
         }
         this.isSubmitting = true;
 
-        const formData: CareerFormData = {
-            position: this.formData.position,
-            name: this.formData.name,
-            email: this.formData.email,
-            phone: this.formData.phone,
-            subject: this.formData.subject,
-            message: this.formData.message,
-            linkedin: this.formData.linkedin
-        };
+        if (!this.selectedFile) {
+            // Force validation message display
+            careerForm.control.markAllAsTouched();
+            this.isSubmitting = false;
+            return;
+        }
 
-        this.apiService.submitCareerForm(formData).subscribe({
+        const formDataToSend = new FormData();
+        formDataToSend.append('position', this.formData.position);
+        formDataToSend.append('name', this.formData.name);
+        formDataToSend.append('email', this.formData.email);
+        formDataToSend.append('phone', this.formData.phone);
+        formDataToSend.append('subject', this.formData.subject);
+        formDataToSend.append('message', this.formData.message);
+        formDataToSend.append('linkedin', this.formData.linkedin);
+        formDataToSend.append('file', this.selectedFile);
+
+        this.apiService.submitCareerFormMultipart(formDataToSend).subscribe({
             next: (response) => {
                 this.isSubmitting = false;
                 this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Thank you! Your application has been submitted successfully.', life: 5000 });
@@ -62,6 +76,11 @@ export class CareersComponent {
                 };
 
                 careerForm.resetForm();
+                this.selectedFile = null;
+                const fileInputEl = (document.querySelector('input[name="file"]') as HTMLInputElement | null);
+                if (fileInputEl) {
+                    fileInputEl.value = '';
+                }
             },
             error: (error) => {
                 this.isSubmitting = false;
